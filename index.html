@@ -6,23 +6,28 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header>
-    <h1>Hi, I'm Ruchira 👋</h1>
-    <p>Business Analyst | Fintech Enthusiast | Data Storyteller</p>
-    <nav>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="resume.html">Resume</a>
-    </nav>
+  <!-- Particles Background -->
+  <div id="particles-js"></div>
+
+  <header class="hero">
+    <h1>Hi, I'm <span class="highlight">Ruchira Lokhande</span></h1>
+    <p class="tagline">Business Analyst | Data Enthusiast | Fintech Explorer</p>
+    <a href="#about" class="btn">Learn More</a>
   </header>
 
-  <section class="intro">
-    <h2>Welcome to My Portfolio</h2>
-    <p>I specialize in transforming data into actionable insights.</p>
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I specialize in transforming data into actionable insights. With a background in IT and AI/ML, I'm passionate about bridging the gap between business and technology.</p>
   </section>
 
   <footer>
     <p>© 2025 Ruchira Lokhande | <a href="https://linkedin.com/in/ruchiralokhande" target="_blank">LinkedIn</a></p>
   </footer>
+
+  <script src="assets/js/particles.min.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'assets/js/particles-config.json', function() {
+      console.log('particles.js config loaded');
+    });
+  </script>
 </body>
-</html>
