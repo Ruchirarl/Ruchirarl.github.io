@@ -108,25 +108,28 @@ ul {
   position: relative;
 }
 
-.hero h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
+.hero-name {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+  color: #fbbf24;
 }
 
 .hero .highlight {
   color: #fbbf24;
 }
 
-.hero .tagline {
+.tagline {
   font-size: 1.2rem;
-  color: #333;
+  color: #111;
+  margin: 0.3rem 0;
 }
 
-.hero .summary {
+.summary {
   font-size: 1rem;
   color: #555;
-  margin: 1rem 0;
+  max-width: 600px;
+  margin: 1rem auto 2rem;
 }
 
 /* BUTTON */
@@ -134,22 +137,21 @@ ul {
   background-color: transparent;
   color: #2f5bea;
   border: 2px solid #2f5bea;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.9rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   transition: all 0.3s ease;
   cursor: pointer;
-  margin: 0.5rem;
-  display: inline-block;
 }
 
 .btn:hover {
   background-color: #2f5bea;
   color: #fff;
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(47, 91, 234, 0.2);
+  box-shadow: 0 6px 18px rgba(47, 91, 234, 0.2);
 }
 
 .btn:active {
