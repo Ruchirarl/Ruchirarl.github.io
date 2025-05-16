@@ -1,55 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<header class="hero" id="home">
-  <h1 class="hero-name">Ruchira Lokhande</h1>
-  <p class="tagline">Business Analyst | Fintech Explorer | Data Storyteller</p>
-  <p class="summary">I help businesses turn complex data into actionable insights.</p>
-  <a href="#contact" class="btn btn-small">Contact Me</a>
-</header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ruchira Lokhande</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <!-- Particles Background -->
+  <!-- Hero Section -->
+  <header class="hero" id="home">
+    <h1 class="hero-name">Ruchira Lokhande</h1>
+    <p class="tagline">Business Analyst | Fintech Explorer | Data Storyteller</p>
+    <p class="summary">I help businesses turn complex data into actionable insights.</p>
+    <a href="#contact" class="btn-small">Contact Me</a>
+  </header>
+
+  <!-- Include particles.js -->
   <div id="particles-js"></div>
-<!-- Top Navigation -->
-<!-- Navbar -->
-<nav class="navbar">
-  <div class="nav-container">
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-</nav>
-
-<!-- Hero Section -->
-<header class="hero" id="home">
-  <h1 class="hero-name">Ruchira Lokhande</h1>
-  <p class="tagline">Business Analyst | Fintech Explorer | Data Storyteller</p>
-  <p class="summary">I help businesses turn complex data into actionable insights.</p>
-  <a href="#contact" class="btn-small">Contact Me</a>
-</header>
-
-  <!-- About Section -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>I turn complex data into clear insights. With a background in IT and AI/ML, I help businesses make data-driven decisions.</p>
-  </section>
-
-  <!-- Scripts -->
   <script src="assets/js/particles.min.js"></script>
   <script>
-    particlesJS.load('particles-js', 'assets/js/particles-config.json', function () {
-      console.log('particles.js config loaded');
+    particlesJS.load('particles-js', 'assets/js/particlesjs-config.json', function() {
+      console.log('Particles.js config loaded');
     });
   </script>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Ruchira Lokhande | <a href="https://linkedin.com/in/ruchiralokhande" target="_blank">LinkedIn</a></p>
-  </footer>
-
 </body>
 </html>

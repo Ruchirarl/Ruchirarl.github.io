@@ -44,16 +44,10 @@ ul {
 
 .nav-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.nav-logo {
-  font-weight: bold;
-  font-size: 1.4rem;
-  color: #2f5bea;
 }
 
 .nav-links {
@@ -94,7 +88,6 @@ ul {
   color: #2f5bea;
 }
 
-
 /* HERO SECTION */
 .hero {
   padding-top: 7rem; /* offset for navbar */
@@ -108,23 +101,17 @@ ul {
   position: relative;
 }
 
-.hero .highlight {
-  color: #fbbf24;
-}
-
 .hero-name {
   font-size: 2.8rem;
   font-weight: 700;
   margin: 0.5rem 0;
   color: #fbbf24;
-  text-align: center;
 }
 
 .tagline {
   font-size: 1.2rem;
   color: #111;
   margin: 0.3rem 0;
-  text-align: center;
 }
 
 .summary {
@@ -132,11 +119,9 @@ ul {
   color: #555;
   max-width: 600px;
   margin: 1rem auto 2rem;
-  text-align: center;
 }
 
-
-/* BUTTON */
+/* SMALL BUTTON */
 .btn-small {
   background-color: transparent;
   color: #2f5bea;
@@ -158,9 +143,4 @@ ul {
   color: #fff;
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(47, 91, 234, 0.2);
-}
-.btn:active {
-  transform: scale(0.97);
-  background-color: #e0a800;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
