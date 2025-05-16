@@ -109,13 +109,13 @@ ul {
 }
 
 .hero .highlight {
-  color: #4f24fb;
+  color: #ae9afe;
 }
 
 .hero-name {
-  font-size: 3.8rem;
+  font-size: 5rem;
   font-weight: 700;
-  margin: 0.5rem 0;
+  margin: 1rem 0;
   color: #8f7af6;
   text-align: center;
 }
