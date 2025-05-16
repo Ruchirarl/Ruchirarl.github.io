@@ -108,23 +108,25 @@ ul {
 
 /* BUTTON */
 .btn {
-  background-color: #ffd700;
-  color: #000;
-  padding: 0.8rem 1.5rem;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
-  margin-top: 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  border: none;
+  background-color: transparent;
+  color: #2f5bea;
+  border: 2px solid #2f5bea;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
   cursor: pointer;
+  margin: 0.5rem;
+  display: inline-block;
 }
 
 .btn:hover {
-  background-color: #ffb600;
+  background-color: #2f5bea;
+  color: #fff;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px rgba(47, 91, 234, 0.2);
 }
 
 .btn:active {
