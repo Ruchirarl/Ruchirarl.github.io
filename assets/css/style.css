@@ -22,12 +22,13 @@ body {
   position: relative;
   z-index: 1;
   height: 100vh;
+  background-color: transparent !important;  /* ← Very important */
+  color: #111;  /* ensure text is readable */
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   text-align: center;
-  background-color: transparent;
 }
 
 .hero h1 {
