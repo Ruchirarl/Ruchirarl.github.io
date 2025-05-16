@@ -61,14 +61,18 @@ ul {
   gap: 2rem;
 }
 
+.nav-links li {
+  list-style: none;
+}
+
 .nav-links li a {
   position: relative;
-  padding: 0.5rem 0;
   font-weight: 500;
   color: #111;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   transition: color 0.3s ease;
+  padding-bottom: 4px;
 }
 
 .nav-links li a::after {
@@ -76,10 +80,10 @@ ul {
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 2px;
   width: 0;
-  background-color: #2f5bea; /* underline color */
-  transition: width 0.3s ease;
+  height: 2px;
+  background-color: #2f5bea;
+  transition: width 0.3s ease-in-out;
 }
 
 .nav-links li a:hover::after {
