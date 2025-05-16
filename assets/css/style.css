@@ -30,8 +30,9 @@ body, html {
   align-items: center;
   justify-content: center;
   text-align: center;
+  background-color: transparent;
+  color: white;
   padding: 2rem;
-  background: transparent;
 }
 
 .hero h1 {
