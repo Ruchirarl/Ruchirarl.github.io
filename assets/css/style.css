@@ -114,10 +114,21 @@ ul {
   border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
-  transition: background 0.3s;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
   margin-top: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border: none;
+  cursor: pointer;
 }
 
 .btn:hover {
   background-color: #ffb600;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: scale(0.97);
+  background-color: #e0a800;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
