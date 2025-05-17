@@ -130,7 +130,7 @@ ul {
   transition: all 0.3s ease;
   display: inline-block;
   cursor: pointer;
-  max-width: 150px;
+  max-width: max-content;
   margin: 0 auto;
 }
 
@@ -146,8 +146,8 @@ ul {
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%) rotate(45deg);
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   border-left: 3px solid #444;
   border-bottom: 3px solid #444;
   animation: bounce 2s infinite;
@@ -156,10 +156,10 @@ ul {
 
 @keyframes bounce {
   0%, 100% {
-    transform: translate(-50%, 0) rotate(45deg);
+    transform: translateX(-50%) translateY(0) rotate(45deg);
   }
   50% {
-    transform: translate(-50%, 10px) rotate(45deg);
+    transform: translateX(-50%) translateY(10px) rotate(45deg);
   }
 }
 
