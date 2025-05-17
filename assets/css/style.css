@@ -44,11 +44,11 @@ ul {
 
 .nav-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end; /* pushes nav to the right */
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  width: 100%;
+  padding-right: 2rem; /* optional spacing */
 }
 
 .nav-logo {
@@ -61,7 +61,6 @@ ul {
 .nav-links {
   display: flex;
   gap: 2rem;
-  margin-left: auto;
 }
 
 .nav-links li a {
