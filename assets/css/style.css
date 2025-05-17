@@ -88,6 +88,7 @@ ul {
   justify-content: center;
   z-index: 1;
   padding: 2rem;
+  background-color: transparent;
 }
 
 .hero-title {
@@ -135,12 +136,10 @@ ul {
 
 .scroll-down {
   margin-top: 2rem;
-  font-size: 1.8rem;
+  font-size: 2rem;
   animation: bounce 2s infinite;
-}
-
-.scroll-down a {
   color: #444;
+  cursor: pointer;
 }
 
 @keyframes bounce {
