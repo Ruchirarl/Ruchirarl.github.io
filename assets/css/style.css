@@ -146,10 +146,12 @@ ul {
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
-  width: 20px;
-  height: 20px;
-  border-left: 2px solid #444;
-  border-bottom: 2px solid #444;
+  width: 30px;
+  height: 30px;
+  border: solid #444;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 5px;
   transform: translateX(-50%) rotate(45deg);
   animation: bounce 2s infinite;
   z-index: 10;
