@@ -45,6 +45,7 @@ ul {
   display: flex;
   justify-content: flex-end;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .nav-links {
@@ -144,18 +145,21 @@ ul {
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
-  width: 24px;
-  height: 24px;
-  border-left: 3px solid #444;
-  border-bottom: 3px solid #444;
-  transform: translateX(-50%) rotate(-45deg);
+  font-size: 2rem;
+  color: #444;
   animation: bounce 2s infinite;
   z-index: 10;
 }
 
+.scroll-down::after {
+  content: "\25BC";
+  font-size: 1.5rem;
+  display: inline-block;
+}
+
 @keyframes bounce {
-  0%, 100% { transform: translate(-50%, 0) rotate(-45deg); }
-  50% { transform: translate(-50%, 10px) rotate(-45deg); }
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(8px); }
 }
 
 /* ABOUT SECTION */
