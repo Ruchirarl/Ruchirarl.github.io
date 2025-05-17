@@ -146,8 +146,8 @@ ul {
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
   z-index: 10;
   animation: bounce 2s infinite;
 }
@@ -155,13 +155,14 @@ ul {
 .scroll-down::before {
   content: "";
   display: block;
-  width: 12px;
-  height: 12px;
+  width: 16px;
+  height: 16px;
+  border-left: 2px solid #444;
   border-bottom: 2px solid #444;
-  border-right: 2px solid #444;
-  transform: rotate(45deg);
+  transform: rotate(-45deg);
   margin: 0 auto;
 }
+
 
 @keyframes bounce {
   0%, 100% {
@@ -171,6 +172,7 @@ ul {
     transform: translateY(8px);
   }
 }
+
 
 /* ABOUT SECTION */
 .about-section {
