@@ -145,21 +145,30 @@ ul {
   position: absolute;
   bottom: 30px;
   left: 50%;
-  transform: translateX(-50%) rotate(45deg);
-  width: 24px;
-  height: 24px;
-  border-left: 3px solid #444;
-  border-bottom: 3px solid #444;
-  animation: bounce 2s infinite;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
   z-index: 10;
+  animation: bounce 2s infinite;
+}
+
+.scroll-down::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-bottom: 2px solid #444;
+  border-right: 2px solid #444;
+  transform: rotate(45deg);
+  margin: 0 auto;
 }
 
 @keyframes bounce {
   0%, 100% {
-    transform: translateX(-50%) translateY(0) rotate(45deg);
+    transform: translateY(0);
   }
   50% {
-    transform: translateX(-50%) translateY(10px) rotate(45deg);
+    transform: translateY(8px);
   }
 }
 
