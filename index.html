@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ruchira Lokhande | Portfolio</title>
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Particles Background -->
+  <!-- Particles Background (only for Home section) -->
   <div id="particles-js"></div>
 
   <!-- Top Navigation -->
-<nav class="navbar">
-  <div class="nav-container">
+  <nav class="navbar">
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
@@ -22,16 +22,35 @@
       <li><a href="#resume">Resume</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-  </div>
-</nav>
+  </nav>
 
   <!-- Hero Section -->
   <section class="hero" id="home">
-    <h1 class="hero-name">Ruchira Lokhande</h1>
-    <p class="tagline">Business Analyst | Fintech Explorer | Data Storyteller</p>
-    <p class="summary">I help businesses turn complex data into clear, actionable insights.</p>
+    <h1 class="hero-title">Ruchira Lokhande</h1>
+    <p class="hero-subtitle">Business Analyst | Fintech Explorer | Data Storyteller</p>
+    <p class="hero-summary">I help businesses turn complex data into clear, actionable insights.</p>
     <a href="#contact" class="btn-small">Contact</a>
+    <div class="scroll-down">
+      <a href="#about">&#x25BC;</a>
+    </div>
   </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="about-container">
+      <h2>About Me</h2>
+      <p>
+        I'm a business analyst with a passion for fintech and storytelling through data.
+        With a background in IT and a deep interest in AI/ML, I strive to turn numbers into
+        narratives that drive business results.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Ruchira Lokhande | <a href="https://linkedin.com/in/ruchiralokhande" target="_blank">LinkedIn</a></p>
+  </footer>
 
   <!-- Scripts -->
   <script src="assets/js/particles.min.js"></script>
@@ -40,11 +59,5 @@
       console.log('particles.js config loaded');
     });
   </script>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Ruchira Lokhande | <a href="https://linkedin.com/in/ruchiralokhande" target="_blank">LinkedIn</a></p>
-  </footer>
-
 </body>
 </html>
