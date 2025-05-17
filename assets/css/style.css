@@ -6,6 +6,7 @@ body {
   color: #333;
   font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 a {
@@ -21,7 +22,7 @@ ul {
 
 /* PARTICLES BACKGROUND */
 #particles-js {
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 100vh;
   z-index: 0;
@@ -35,6 +36,7 @@ ul {
 .navbar {
   position: fixed;
   top: 0;
+  right: 0;
   width: 100%;
   background: #ffffff;
   padding: 1rem 2rem;
@@ -42,11 +44,13 @@ ul {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   display: flex;
   justify-content: flex-end;
+  box-sizing: border-box;
 }
 
 .nav-links {
   display: flex;
   gap: 2rem;
+  margin-right: 1rem;
 }
 
 .nav-links li a {
@@ -89,10 +93,11 @@ ul {
   z-index: 1;
   padding: 2rem;
   background-color: transparent;
+  overflow: hidden;
 }
 
 .hero-title {
-  font-size: 3.5rem;
+  font-size: 3.8rem;
   font-family: 'Playfair Display', serif;
   color: #504160;
   margin-bottom: 1rem;
@@ -116,10 +121,10 @@ ul {
   background-color: transparent;
   color: #468a7f;
   border: 2px solid #468a7f;
-  padding: 0.6rem 1.4rem;
+  padding: 0.4rem 1.2rem;
   border-radius: 6px;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: all 0.3s ease;
@@ -135,27 +140,35 @@ ul {
 }
 
 .scroll-down {
-  margin-top: 2rem;
-  font-size: 2rem;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24px;
+  height: 24px;
+  border-left: 3px solid #444;
+  border-bottom: 3px solid #444;
+  transform: translateX(-50%) rotate(-45deg);
   animation: bounce 2s infinite;
-  color: #444;
-  cursor: pointer;
+  z-index: 10;
 }
 
 @keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(8px); }
+  0%, 100% { transform: translate(-50%, 0) rotate(-45deg); }
+  50% { transform: translate(-50%, 10px) rotate(-45deg); }
 }
 
 /* ABOUT SECTION */
 .about-section {
-  background-color: #111111;
+  background-color: #f9f9f9;
   padding: 5rem 2rem;
   text-align: center;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 2;
 }
 
 .about-container {
