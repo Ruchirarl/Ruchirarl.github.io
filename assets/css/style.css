@@ -3,8 +3,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
-  color: #111111;
-  font-family: 'Segoe UI', sans-serif;
+  color: #333333;
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -44,25 +44,15 @@ ul {
 
 .nav-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.nav-logo {
-  font-weight: bold;
-  font-size: 1.4rem;
-  color: #2f5bea;
-}
-
 .nav-links {
   display: flex;
   gap: 2rem;
-}
-
-.nav-links li {
-  list-style: none;
 }
 
 .nav-links li a {
@@ -82,7 +72,7 @@ ul {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #2f5bea;
+  background-color: #468a7f;
   transition: width 0.3s ease-in-out;
 }
 
@@ -91,71 +81,60 @@ ul {
 }
 
 .nav-links li a:hover {
-  color: #2f5bea;
+  color: #468a7f;
 }
-
 
 /* HERO SECTION */
 .hero {
-  padding-top: 7rem; /* offset for navbar */
-  height: 100vh;
-  background-color: transparent;
+  padding-top: 8rem;
+  padding-bottom: 6rem;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  z-index: 1;
   position: relative;
-}
-
-.hero .highlight {
-  color: #ae9afe;
+  z-index: 2;
 }
 
 .hero-name {
-  font-size: 35px;
+  font-size: 3rem;
   font-weight: 700;
-  margin: 1rem 0;
-  color: #8f7af6;
-  text-align: center;
+  color: #5c5470;
+  margin-bottom: 1rem;
 }
 
 .tagline {
-  font-size: 1.2rem;
-  color: #111;
-  margin: 0.3rem 0;
-  text-align: center;
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.3px;
 }
 
 .summary {
   font-size: 1rem;
-  color: #555;
+  color: #666;
   max-width: 600px;
-  margin: 1rem auto 2rem;
-  text-align: center;
+  margin: 0 auto 2rem;
+  line-height: 1.5;
 }
-
 
 /* BUTTON */
 .btn-small {
   background-color: transparent;
-  color: #2f5bea;
-  border: 2px solid #2f5bea;
+  color: #468a7f;
+  border: 2px solid #468a7f;
   padding: 0.6rem 1.4rem;
   border-radius: 6px;
   font-weight: 500;
   font-size: 0.95rem;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   transition: all 0.3s ease;
-  cursor: pointer;
-  margin-top: 1.2rem;
   display: inline-block;
+  margin-top: 1rem;
+  cursor: pointer;
 }
 
 .btn-small:hover {
-  background-color: #2f5bea;
+  background-color: #468a7f;
   color: #fff;
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(47, 91, 234, 0.2);
+  box-shadow: 0 6px 18px rgba(70, 138, 127, 0.2);
 }
