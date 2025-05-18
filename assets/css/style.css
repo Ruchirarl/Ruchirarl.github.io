@@ -148,21 +148,19 @@ ul {
   transform: translateX(-50%);
   width: 30px;
   height: 30px;
-  border: solid #444;
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  padding: 5px;
-  transform: translateX(-50%) rotate(45deg);
+  border-left: 3px solid #444;
+  border-bottom: 3px solid #444;
+  transform: translateX(-50%) rotate(-45deg);
   animation: bounce 2s infinite;
   z-index: 10;
 }
 
 @keyframes bounce {
   0%, 100% {
-    transform: translateX(-50%) translateY(0) rotate(45deg);
+    transform: translateX(-50%) translateY(0) rotate(-45deg);
   }
   50% {
-    transform: translateX(-50%) translateY(8px) rotate(45deg);
+    transform: translateX(-50%) translateY(8px) rotate(-45deg);
   }
 }
 
