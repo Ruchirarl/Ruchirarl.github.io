@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
   <!-- Particles Background (only for Home section) -->
@@ -18,8 +19,8 @@
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#resume">Resume</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -29,41 +30,286 @@
     <h1 class="hero-title">Ruchira Lokhande</h1>
     <p class="hero-subtitle">Business Analyst | Fintech Explorer | Data Storyteller</p>
     <p class="hero-summary">I help businesses turn complex data into clear, actionable insights.</p>
-    <a href="#contact" class="btn-small">Contact</a>
+    
+    <!-- Action Buttons -->
+    <div class="hero-buttons">
+      <a href="assets/resume.pdf" class="btn-primary" download>
+        <i class="fas fa-download"></i> Download Resume
+      </a>
+      <a href="https://github.com/ruchirarl" class="btn-secondary" target="_blank">
+        <i class="fab fa-github"></i> View GitHub
+      </a>
+    </div>
 
     <!-- Scroll Down Arrow -->
     <a href="#about" class="scroll-down" aria-label="Scroll Down"></a>
   </section>
 
   <!-- About Section -->
-<section class="about-section" id="about">
-  <div class="about-container">
-    <img src="assets/images/your-photo.jpg" alt="Ruchira Lokhande">
-    <div class="about-text">
-      <h2>About Me</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et placerat erat. Sed nec justo magna. Suspendisse potenti. In feugiat, metus nec feugiat placerat, ipsum risus interdum justo, sed rutrum lacus purus non quam.
-      </p>
+  <section class="about-section" id="about">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="assets/images/your-photo.jpg" alt="Ruchira Lokhande">
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          I'm a passionate Business Analyst with expertise in fintech and data analytics. 
+          With a strong foundation in Python, SQL, and data visualization tools like Tableau, 
+          I specialize in transforming complex business problems into data-driven solutions.
+        </p>
+        <p>
+          My experience spans across financial services, where I've helped organizations 
+          optimize processes, improve decision-making, and drive growth through insightful 
+          data analysis and strategic recommendations.
+        </p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">20+</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="skills-section" id="skills">
-  <h2>Skills & Technologies</h2>
-  <div class="skills-grid">
-    <div class="skill-item"><img src="assets/logos/python.png" alt="Python"></div>
-    <div class="skill-item"><img src="assets/logos/sql.png" alt="SQL"></div>
-    <div class="skill-item"><img src="assets/logos/tableau.png" alt="Tableau"></div>
-    <div class="skill-item"><img src="assets/logos/pandas.png" alt="Pandas"></div>
-    <div class="skill-item"><img src="assets/logos/numpy.png" alt="NumPy"></div>
-    <div class="skill-item"><img src="assets/logos/excel.png" alt="Excel"></div>
-    <!-- Add more as needed -->
-  </div>
-</section>
+  <!-- Skills Section -->
+  <section class="skills-section" id="skills">
+    <div class="container">
+      <h2>Skills & Technologies</h2>
+      <p class="section-subtitle">Technologies I work with to bring ideas to life</p>
+      
+      <div class="skills-container">
+        <div class="skill-bubble" data-skill="Python">
+          <div class="skill-icon">
+            <i class="fab fa-python"></i>
+          </div>
+          <span class="skill-name">Python</span>
+        </div>
+        
+        <div class="skill-bubble" data-skill="SQL">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <span class="skill-name">SQL</span>
+        </div>
+        
+        <div class="skill-bubble" data-skill="Tableau">
+          <div class="skill-icon">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+          <span class="skill-name">Tableau</span>
+        </div>
+        
+        <div class="skill-bubble" data-skill="Pandas">
+          <div class="skill-icon">
+            <i class="fas fa-table"></i>
+          </div>
+          <span class="skill-name">Pandas</span>
+        </div>
+        
+        <div class="skill-bubble" data-skill="NumPy">
+          <div class="skill-icon">
+            <i class="fas fa-calculator"></i>
+          </div>
+          <span class="skill-name">NumPy</span>
+        </div>
+        
+        <div class="skill-bubble" data-skill="Excel">
+          <div class="skill-icon">
+            <i class="fas fa-file-excel"></i>
+          </div>
+          <span class="skill-name">Excel</span>
+        </div>
+        
+        <div class="skill-bubble" data-skill="Power BI">
+          <div class="skill-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <span class="skill-name">Power BI</span>
+        </div>
+        
+        <div class="skill-bubble" data-skill="R">
+          <div class="skill-icon">
+            <i class="fas fa-chart-pie"></i>
+          </div>
+          <span class="skill-name">R</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <p class="section-subtitle">Some of my recent work and contributions</p>
+      
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/images/project1.jpg" alt="Project 1">
+          </div>
+          <div class="project-content">
+            <h3>Financial Data Analysis Dashboard</h3>
+            <p>Interactive dashboard for analyzing financial performance metrics using Python and Tableau.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Tableau</span>
+              <span class="tech-tag">SQL</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ruchirarl/financial-dashboard" target="_blank" class="project-link">
+                <i class="fab fa-github"></i> View Code
+              </a>
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/images/project2.jpg" alt="Project 2">
+          </div>
+          <div class="project-content">
+            <h3>Customer Segmentation Analysis</h3>
+            <p>Machine learning model for customer segmentation using clustering algorithms.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Scikit-learn</span>
+              <span class="tech-tag">Pandas</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ruchirarl/customer-segmentation" target="_blank" class="project-link">
+                <i class="fab fa-github"></i> View Code
+              </a>
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/images/project3.jpg" alt="Project 3">
+          </div>
+          <div class="project-content">
+            <h3>Business Intelligence Report</h3>
+            <p>Comprehensive BI report with interactive visualizations for executive decision-making.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Power BI</span>
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">Excel</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ruchirarl/bi-report" target="_blank" class="project-link">
+                <i class="fab fa-github"></i> View Code
+              </a>
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="projects-cta">
+        <a href="https://github.com/ruchirarl" target="_blank" class="btn-primary">
+          <i class="fab fa-github"></i> View All Projects on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <p class="section-subtitle">Let's discuss how we can work together</p>
+      
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Email</h3>
+              <p>ruchira.lokhande@email.com</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fab fa-linkedin"></i>
+            </div>
+            <div class="contact-details">
+              <h3>LinkedIn</h3>
+              <p>linkedin.com/in/ruchiralokhande</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="contact-details">
+              <h3>GitHub</h3>
+              <p>github.com/ruchirarl</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Ruchira Lokhande | <a href="https://linkedin.com/in/ruchiralokhande" target="_blank">LinkedIn</a></p>
+    <div class="footer-content">
+      <p>© 2025 Ruchira Lokhande | Business Analyst & Data Enthusiast</p>
+      <div class="footer-links">
+        <a href="https://linkedin.com/in/ruchiralokhande" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/ruchirarl" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="assets/resume.pdf" download>
+          <i class="fas fa-file-pdf"></i>
+        </a>
+      </div>
+    </div>
   </footer>
 
   <!-- Scripts -->
@@ -71,6 +317,24 @@
   <script>
     particlesJS.load('particles-js', 'assets/js/particles-config.json', function () {
       console.log('particles.js config loaded');
+    });
+    
+    // Skill bubble interactions
+    document.querySelectorAll('.skill-bubble').forEach(bubble => {
+      bubble.addEventListener('mouseenter', function() {
+        this.style.transform = 'scale(1.1) rotate(5deg)';
+      });
+      
+      bubble.addEventListener('mouseleave', function() {
+        this.style.transform = 'scale(1) rotate(0deg)';
+      });
+    });
+    
+    // Contact form handling
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      // Add your form submission logic here
+      alert('Thank you for your message! I\'ll get back to you soon.');
     });
   </script>
 </body>
