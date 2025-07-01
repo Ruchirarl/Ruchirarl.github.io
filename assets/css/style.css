@@ -254,83 +254,131 @@ ul {
   }
 }
 
-/* ABOUT SECTION */
+/* ABOUT SECTION - Modern Split Layout */
 .about-section {
-  background-color: #f9f9f9;
-  padding: 5rem 2rem;
-  text-align: left;
-  min-height: 100vh;
+  background: #f4f8fb;
+  padding: 5rem 0;
+  min-height: 80vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  position: relative;
-  z-index: 2;
+  justify-content: center;
 }
 
-.about-container {
-  max-width: 1000px;
+.about-flex {
   display: flex;
   align-items: center;
-  gap: 3rem;
+  justify-content: center;
+  gap: 3.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
   flex-wrap: wrap;
 }
 
-.about-image {
-  flex-shrink: 0;
+.about-photo {
+  flex: 0 0 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.about-container img {
-  width: 260px;
-  height: 260px;
+.about-photo img {
+  width: 240px;
+  height: 240px;
   object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 6px solid #eaf6f3;
+  box-shadow: 0 6px 32px rgba(70,138,127,0.10);
+  background: #dbe6ef;
 }
 
-.about-text {
-  max-width: 600px;
-}
-
-.about-text h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 1rem;
-}
-
-.about-text p {
-  font-size: 1.1rem;
-  color: #444;
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
-}
-
-.about-stats {
+.about-content {
+  flex: 1 1 350px;
+  color: #2b3856;
   display: flex;
-  gap: 2rem;
-  margin-top: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 300px;
+}
+
+.about-heading {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  color: #2b3856;
+  letter-spacing: 1px;
+}
+
+.about-subtitle {
+  font-size: 1.2rem;
+  color: #468a7f;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
+}
+.about-divider {
+  color: #b2c7d9;
+  margin: 0 0.5rem;
+}
+
+.about-content p {
+  font-size: 1.08rem;
+  color: #2b3856;
+  margin-bottom: 1.1rem;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.about-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
   flex-wrap: wrap;
 }
 
-.stat {
-  text-align: center;
-  flex: 1;
-  min-width: 100px;
+.about-buttons .btn-primary {
+  background: #468a7f;
+  color: #fff;
+  border: 2px solid #468a7f;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.8rem 2.2rem;
+  border-radius: 8px;
+  transition: all 0.2s;
+  box-shadow: 0 2px 8px rgba(70,138,127,0.10);
+}
+.about-buttons .btn-primary:hover {
+  background: #2b3856;
+  border-color: #2b3856;
+  color: #fff;
 }
 
-.stat-number {
-  display: block;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #468a7f;
-  font-family: 'Playfair Display', serif;
+.about-buttons .btn-secondary {
+  background: #eaf0f6;
+  color: #2b3856;
+  border: 2px solid #eaf0f6;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.8rem 2.2rem;
+  border-radius: 8px;
+  transition: all 0.2s;
+  box-shadow: 0 2px 8px rgba(70,138,127,0.07);
+}
+.about-buttons .btn-secondary:hover {
+  background: #468a7f;
+  color: #fff;
+  border-color: #468a7f;
 }
 
-.stat-label {
-  font-size: 0.9rem;
-  color: #666;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+@media (max-width: 900px) {
+  .about-flex {
+    flex-direction: column;
+    gap: 2.5rem;
+    text-align: center;
+  }
+  .about-content {
+    align-items: center;
+  }
 }
 
 /* SKILLS SECTION */
