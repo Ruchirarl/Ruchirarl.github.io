@@ -1136,3 +1136,71 @@ footer {
     width: 100%;
   }
 }
+
+/* === Background Section: New Layout Enhancements === */
+.background-subtitle {
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: #319795;
+  margin: 2.5rem 0 1.5rem 0;
+  text-align: left;
+  letter-spacing: 0.5px;
+}
+
+.professional-card-row {
+  display: flex;
+  gap: 2.2rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-bottom: 2.5rem;
+}
+
+.professional-card-row .background-card {
+  flex: 1 1 320px;
+  min-width: 320px;
+  max-width: 370px;
+}
+
+.education-card-row {
+  display: flex;
+  gap: 2.2rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-bottom: 2.5rem;
+}
+
+.education-card-row .background-card {
+  flex: 1 1 320px;
+  min-width: 320px;
+  max-width: 420px;
+}
+
+.card-bullets {
+  margin: 0.7rem 0 0 1.1rem;
+  padding: 0 0 0 1.1rem;
+  color: #444e5e;
+  font-size: 0.99rem;
+  line-height: 1.6;
+  list-style: disc inside;
+}
+
+.card-bullets li {
+  margin-bottom: 0.4rem;
+  padding-left: 0.2rem;
+}
+
+@media (max-width: 1100px) {
+  .professional-card-row, .education-card-row {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  .professional-card-row .background-card,
+  .education-card-row .background-card {
+    max-width: 98vw;
+    min-width: 0;
+    width: 100%;
+  }
+}
