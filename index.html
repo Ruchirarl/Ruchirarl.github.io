@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
   <!-- Particles Background (only for Home section) -->
@@ -117,53 +118,65 @@
     <div class="container">
       <h2 class="section-title">Portfolio</h2>
       <p class="section-subtitle">A glimpse of the projects I've been working on</p>
-      <div class="projects-carousel">
-        <div class="project-card">
-          <div class="project-image">
-            <img src="assets/images/project1.jpg" alt="Project 1">
-          </div>
-          <div class="project-content">
-            <h3>Financial Data Analysis Dashboard</h3>
-            <p>Interactive dashboard for analyzing financial performance metrics using Python and Tableau.</p>
-            <div class="project-tech">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Tableau</span>
-              <span class="tech-tag">SQL</span>
+      <div class="swiper projects-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="assets/images/project1.jpg" alt="Project 1">
+              </div>
+              <div class="project-content">
+                <h3>Financial Data Analysis Dashboard</h3>
+                <p>Interactive dashboard for analyzing financial performance metrics using Python and Tableau.</p>
+                <div class="project-tech">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Tableau</span>
+                  <span class="tech-tag">SQL</span>
+                </div>
+                <a href="https://github.com/ruchirarl/financial-dashboard" target="_blank" class="project-learn-more">Learn More</a>
+              </div>
             </div>
-            <a href="https://github.com/ruchirarl/financial-dashboard" target="_blank" class="project-learn-more">Learn More</a>
           </div>
-        </div>
-        <div class="project-card">
-          <div class="project-image">
-            <img src="assets/images/project2.jpg" alt="Project 2">
-          </div>
-          <div class="project-content">
-            <h3>Customer Segmentation Analysis</h3>
-            <p>Machine learning model for customer segmentation using clustering algorithms.</p>
-            <div class="project-tech">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Scikit-learn</span>
-              <span class="tech-tag">Pandas</span>
+          <div class="swiper-slide">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="assets/images/project2.jpg" alt="Project 2">
+              </div>
+              <div class="project-content">
+                <h3>Customer Segmentation Analysis</h3>
+                <p>Machine learning model for customer segmentation using clustering algorithms.</p>
+                <div class="project-tech">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Scikit-learn</span>
+                  <span class="tech-tag">Pandas</span>
+                </div>
+                <a href="https://github.com/ruchirarl/customer-segmentation" target="_blank" class="project-learn-more">Learn More</a>
+              </div>
             </div>
-            <a href="https://github.com/ruchirarl/customer-segmentation" target="_blank" class="project-learn-more">Learn More</a>
           </div>
-        </div>
-        <div class="project-card">
-          <div class="project-image">
-            <img src="assets/images/project3.jpg" alt="Project 3">
-          </div>
-          <div class="project-content">
-            <h3>Business Intelligence Report</h3>
-            <p>Comprehensive BI report with interactive visualizations for executive decision-making.</p>
-            <div class="project-tech">
-              <span class="tech-tag">Power BI</span>
-              <span class="tech-tag">SQL</span>
-              <span class="tech-tag">Excel</span>
+          <div class="swiper-slide">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="assets/images/project3.jpg" alt="Project 3">
+              </div>
+              <div class="project-content">
+                <h3>Business Intelligence Report</h3>
+                <p>Comprehensive BI report with interactive visualizations for executive decision-making.</p>
+                <div class="project-tech">
+                  <span class="tech-tag">Power BI</span>
+                  <span class="tech-tag">SQL</span>
+                  <span class="tech-tag">Excel</span>
+                </div>
+                <a href="https://github.com/ruchirarl/bi-report" target="_blank" class="project-learn-more">Learn More</a>
+              </div>
             </div>
-            <a href="https://github.com/ruchirarl/bi-report" target="_blank" class="project-learn-more">Learn More</a>
           </div>
+          <!-- Add more swiper-slide project cards as needed -->
         </div>
-        <!-- Add more project cards as needed -->
+        <!-- Swiper navigation and pagination -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
   </section>
@@ -250,6 +263,7 @@
 
   <!-- Scripts -->
   <script src="assets/js/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     particlesJS.load('particles-js', 'assets/js/particles-config.json', function () {
       console.log('particles.js config loaded');
@@ -271,6 +285,29 @@
       e.preventDefault();
       // Add your form submission logic here
       alert('Thank you for your message! I\'ll get back to you soon.');
+    });
+
+    // Swiper for projects
+    var swiper = new Swiper('.projects-swiper', {
+      slidesPerView: 2,
+      spaceBetween: 32,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        0: { slidesPerView: 1 },
+        900: { slidesPerView: 2 }
+      }
     });
   </script>
 </body>
