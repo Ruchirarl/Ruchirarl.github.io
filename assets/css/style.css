@@ -1157,9 +1157,60 @@ footer {
 }
 
 .professional-card-row .background-card {
-  flex: 1 1 320px;
-  min-width: 320px;
-  max-width: 370px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 2.2rem;
+  padding-bottom: 2.2rem;
+  min-height: 260px;
+}
+
+.card-logo-top {
+  margin: 0 auto 1.1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-content-centered {
+  text-align: center;
+  width: 100%;
+}
+
+.card-role {
+  font-size: 1.13rem;
+  font-weight: 700;
+  color: #2a3a4b;
+  margin-bottom: 0.3rem;
+  margin-top: 0;
+}
+
+.card-company {
+  display: block;
+  font-size: 1.01rem;
+  color: #319795;
+  font-weight: 600;
+  margin-bottom: 0.1rem;
+}
+
+.professional-card-row .card-content span,
+.professional-card-row .card-content .card-date,
+.professional-card-row .card-content .card-place {
+  margin-bottom: 0;
+}
+
+.professional-card-row .card-content .card-date,
+.professional-card-row .card-content .card-place {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .professional-card-row .background-card {
+    min-height: 180px;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
 }
 
 .education-card-row {
