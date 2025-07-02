@@ -636,12 +636,12 @@ ul {
   display: flex;
   justify-content: center;
   align-items: stretch;
+  width: auto !important;
 }
 .project-card {
   background: #fff;
   border-radius: 16px;
-  min-width: 340px;
-  max-width: 380px;
+  width: 400px;
   box-shadow: 0 4px 24px rgba(70,138,127,0.10);
   overflow: hidden;
   display: flex;
@@ -770,8 +770,7 @@ ul {
     padding: 1rem 0 2rem 0;
   }
   .project-card {
-    min-width: 90vw;
-    max-width: 90vw;
+    width: 90vw;
   }
 }
 
