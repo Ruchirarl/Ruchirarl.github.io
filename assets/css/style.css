@@ -616,34 +616,40 @@ ul {
   padding: 5rem 2rem;
   text-align: center;
 }
-.projects-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #2b3856;
-  font-family: 'Playfair Display', serif;
+.projects-section .container {
+  max-width: 1100px;
+  margin: 0 auto;
 }
-.projects-carousel {
+.projects-swiper {
+  max-width: 900px;
+  margin: 3rem auto 2rem auto;
+  background: #f4f8fb;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(70,138,127,0.10);
+  padding: 2rem 0 2.5rem 0;
+  position: relative;
+}
+.swiper-wrapper {
+  align-items: stretch;
+}
+.swiper-slide {
   display: flex;
-  overflow-x: auto;
-  gap: 2vw;
-  padding-bottom: 1rem;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  margin: 3rem 0 2rem 0;
+  justify-content: center;
+  align-items: stretch;
 }
 .project-card {
   background: #fff;
   border-radius: 16px;
-  min-width: 48vw;
-  max-width: 48vw;
+  min-width: 340px;
+  max-width: 380px;
   box-shadow: 0 4px 24px rgba(70,138,127,0.10);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  scroll-snap-align: start;
   transition: transform 0.18s, box-shadow 0.18s;
   border: 2px solid transparent;
+  margin: 0 auto;
 }
 .project-card:hover {
   transform: translateY(-8px) scale(1.03);
@@ -654,15 +660,25 @@ ul {
   height: 180px;
   background: #eaf6f3;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .project-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s;
+  border-radius: 0 0 0 0;
+  display: block;
 }
-.project-card:hover .project-image img {
-  transform: scale(1.05);
+.project-image img[src=""],
+.project-image img:not([src]) {
+  background: #eaf6f3;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  content: url('https://via.placeholder.com/340x180?text=Project+Image');
 }
 .project-content {
   padding: 1.5rem 1.2rem 1.2rem 1.2rem;
@@ -702,16 +718,17 @@ ul {
   color: #fff;
   border: none;
   border-radius: 8px;
-  padding: 0.7rem 1.5rem;
+  padding: 0.9rem 0;
   font-weight: 600;
   font-size: 1rem;
-  margin-top: auto;
+  margin-top: 1.2rem;
   cursor: pointer;
   transition: background 0.2s, box-shadow 0.2s;
   box-shadow: 0 2px 8px rgba(70,138,127,0.10);
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: block;
+  width: 100%;
 }
 .project-learn-more:hover {
   background: #2b3856;
@@ -719,18 +736,38 @@ ul {
   box-shadow: 0 4px 16px rgba(70,138,127,0.18);
 }
 
-/* Hide scrollbar for carousel */
-.projects-carousel::-webkit-scrollbar {
-  display: none;
+/* Swiper navigation and pagination styling */
+.swiper-button-next, .swiper-button-prev {
+  color: #468a7f;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(70,138,127,0.10);
+  width: 40px;
+  height: 40px;
+  top: 45%;
+  transition: background 0.2s, color 0.2s;
 }
-.projects-carousel {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  background: #468a7f;
+  color: #fff;
+}
+.swiper-pagination-bullet {
+  background: #468a7f;
+  opacity: 0.4;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px !important;
+  transition: opacity 0.2s;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #2b3856;
 }
 
 @media (max-width: 900px) {
-  .projects-carousel {
-    gap: 1rem;
+  .projects-swiper {
+    max-width: 98vw;
+    padding: 1rem 0 2rem 0;
   }
   .project-card {
     min-width: 90vw;
