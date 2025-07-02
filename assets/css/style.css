@@ -1204,3 +1204,81 @@ footer {
     width: 100%;
   }
 }
+
+/* === Collapsible Experience Cards === */
+.collapsible-card {
+  cursor: pointer;
+  overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.2s;
+  position: relative;
+}
+.collapsible-card .card-header {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  width: 100%;
+  padding-right: 0.5rem;
+}
+.collapsible-card .card-header-content {
+  flex: 1;
+  min-width: 0;
+}
+.collapsible-card .expand-btn {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #319795;
+  transition: transform 0.2s;
+  margin-left: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.collapsible-card .expand-btn i {
+  transition: transform 0.3s;
+}
+.collapsible-card .card-details {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0.4,0,0.2,1), opacity 0.25s;
+  padding-top: 0;
+  margin-top: 0;
+}
+.collapsible-card.expanded .card-details {
+  max-height: 800px;
+  opacity: 1;
+  padding-top: 1.1rem;
+  margin-top: 0.2rem;
+}
+.collapsible-card.expanded .expand-btn i {
+  transform: rotate(180deg);
+}
+.collapsible-card .card-header h4,
+.collapsible-card .card-header .card-place,
+.collapsible-card .card-header .card-date {
+  margin-bottom: 0.1rem;
+}
+.collapsible-card .card-header h4 {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #2a3a4b;
+  margin-bottom: 0.1rem;
+}
+.collapsible-card .card-header .card-place {
+  color: #319795;
+  font-weight: 600;
+  font-size: 0.99rem;
+}
+.collapsible-card .card-header .card-date {
+  color: #718096;
+  font-size: 0.97rem;
+}
+
+@media (max-width: 1100px) {
+  .collapsible-card .card-header {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}

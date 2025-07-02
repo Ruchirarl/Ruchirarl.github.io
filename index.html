@@ -178,12 +178,17 @@
       <div class="background-professional">
         <h3 class="background-subtitle">Professional Experience</h3>
         <div class="professional-card-row">
-          <div class="background-card">
-            <div class="card-logo"><img src="assets/images/defonte-logo.png" alt="De Fonte Law Logo"></div>
-            <div class="card-content">
-              <h4>Business Analyst</h4>
-              <span class="card-place">De Fonte Law, Practicum Project &mdash; San Francisco, CA</span>
-              <span class="card-date">September 2024 – June 2025</span>
+          <div class="background-card collapsible-card">
+            <div class="card-header">
+              <div class="card-logo"><img src="assets/images/defonte-logo.png" alt="De Fonte Law Logo"></div>
+              <div class="card-header-content">
+                <h4>Business Analyst</h4>
+                <span class="card-place">De Fonte Law, Practicum Project &mdash; San Francisco, CA</span>
+                <span class="card-date">September 2024 – June 2025</span>
+              </div>
+              <button class="expand-btn" aria-label="Expand details"><i class="fas fa-chevron-down"></i></button>
+            </div>
+            <div class="card-details">
               <ul class="card-bullets">
                 <li>Analyzed 5+ years of operational and financial data for an estate planning law firm, delivering actionable insights that directly informed strategic decision-making and optimized key firm operations.</li>
                 <li>Leveraged Python for in-depth time-tracking and lead conversion analysis, identifying workflow bottlenecks and high-drop-off channels, and provided data-driven recommendations to improve efficiency by an estimated 10%.</li>
@@ -192,24 +197,34 @@
               </ul>
             </div>
           </div>
-          <div class="background-card">
-            <div class="card-logo"><img src="assets/images/deloitte-logo.png" alt="Deloitte Logo"></div>
-            <div class="card-content">
-              <h4>Analyst</h4>
-              <span class="card-place">Deloitte US-India &mdash; Bangalore, IN</span>
-              <span class="card-date">January 2024 – May 2024</span>
+          <div class="background-card collapsible-card">
+            <div class="card-header">
+              <div class="card-logo"><img src="assets/images/deloitte-logo.png" alt="Deloitte Logo"></div>
+              <div class="card-header-content">
+                <h4>Analyst</h4>
+                <span class="card-place">Deloitte US-India &mdash; Bangalore, IN</span>
+                <span class="card-date">January 2024 – May 2024</span>
+              </div>
+              <button class="expand-btn" aria-label="Expand details"><i class="fas fa-chevron-down"></i></button>
+            </div>
+            <div class="card-details">
               <ul class="card-bullets">
                 <li>Successfully completed Deloitte's Analyst Training Program, mastering core business processes, analytical methodologies, and advanced data analysis techniques critical for client solutions.</li>
                 <li>Developed hands-on proficiency in SQL, Python, Data Warehousing, ETL processes, and complex ETL integration utilizing Informatica PowerCenter and IICS for robust data solutions.</li>
               </ul>
             </div>
           </div>
-          <div class="background-card">
-            <div class="card-logo"><img src="assets/images/ai4m-logo.png" alt="AI4M Technology Logo"></div>
-            <div class="card-content">
-              <h4>Business Analyst Intern</h4>
-              <span class="card-place">AI4M Technology Pvt. Ltd. &mdash; Pune, IN</span>
-              <span class="card-date">January 2023 – July 2023</span>
+          <div class="background-card collapsible-card">
+            <div class="card-header">
+              <div class="card-logo"><img src="assets/images/ai4m-logo.png" alt="AI4M Technology Logo"></div>
+              <div class="card-header-content">
+                <h4>Business Analyst Intern</h4>
+                <span class="card-place">AI4M Technology Pvt. Ltd. &mdash; Pune, IN</span>
+                <span class="card-date">January 2023 – July 2023</span>
+              </div>
+              <button class="expand-btn" aria-label="Expand details"><i class="fas fa-chevron-down"></i></button>
+            </div>
+            <div class="card-details">
               <ul class="card-bullets">
                 <li>Applied computer vision and machine learning to identify manufacturing bottlenecks and streamline processes, improving defect detection accuracy by 10% using KNN, XGBoost, Random Forest, and CNN models.</li>
                 <li>Designed and deployed Figma-based dashboards for real-time defect tracking, reducing design iterations by 25% and enhancing performance monitoring.</li>
@@ -369,6 +384,22 @@
       e.preventDefault();
       // Add your form submission logic here
       alert('Thank you for your message! I\'ll get back to you soon.');
+    });
+
+    // Collapsible Experience Cards
+    document.querySelectorAll('.collapsible-card .expand-btn').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        const card = this.closest('.collapsible-card');
+        const isOpen = card.classList.contains('expanded');
+        // Collapse all
+        document.querySelectorAll('.collapsible-card.expanded').forEach(c => {
+          c.classList.remove('expanded');
+        });
+        // Expand if not already open
+        if (!isOpen) {
+          card.classList.add('expanded');
+        }
+      });
     });
   </script>
 </body>
