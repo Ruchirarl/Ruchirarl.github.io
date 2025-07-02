@@ -625,7 +625,7 @@ ul {
 .projects-carousel {
   display: flex;
   overflow-x: auto;
-  gap: 2rem;
+  gap: 2vw;
   padding-bottom: 1rem;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
@@ -634,8 +634,8 @@ ul {
 .project-card {
   background: #fff;
   border-radius: 16px;
-  min-width: 340px;
-  max-width: 340px;
+  min-width: 48vw;
+  max-width: 48vw;
   box-shadow: 0 4px 24px rgba(70,138,127,0.10);
   overflow: hidden;
   display: flex;
