@@ -636,7 +636,6 @@ ul {
   display: flex;
   justify-content: center;
   align-items: stretch;
-  width: auto !important;
 }
 .project-card {
   background: #fff;

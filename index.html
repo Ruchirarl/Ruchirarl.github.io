@@ -289,9 +289,10 @@
 
     // Swiper for projects
     var swiper = new Swiper('.projects-swiper', {
-      slidesPerView: 2,
+      slidesPerView: 'auto',
       spaceBetween: 32,
       loop: true,
+      centeredSlides: true,
       autoplay: {
         delay: 2500,
         disableOnInteraction: false,
@@ -303,10 +304,6 @@
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
-      },
-      breakpoints: {
-        0: { slidesPerView: 1 },
-        900: { slidesPerView: 2 }
       }
     });
   </script>
