@@ -974,11 +974,20 @@ footer {
   max-width: 1100px;
   margin: 0 auto;
 }
+.background-section .section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #2b3856;
+  margin-bottom: 2.5rem;
+  letter-spacing: 1px;
+}
 .background-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   margin-top: 3rem;
+  justify-content: center;
 }
 .background-col {
   background: #f4f8fb;
@@ -988,6 +997,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  min-width: 0;
 }
 .background-heading {
   font-size: 1.3rem;
@@ -1007,16 +1017,21 @@ footer {
   align-items: flex-start;
   gap: 1.2rem;
   position: relative;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(70,138,127,0.07);
+  padding: 1.2rem 1rem;
+  margin-bottom: 0.5rem;
 }
 .timeline-logo {
-  width: 48px;
-  height: 48px;
-  background: #eaf6f3;
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, #eaf6f3 60%, #c6e2dd 100%);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #468a7f;
   box-shadow: 0 2px 8px rgba(70,138,127,0.10);
   flex-shrink: 0;
@@ -1050,6 +1065,9 @@ footer {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+  .background-col {
+    align-items: center;
+  }
 }
 
 /* Certifications Section */
@@ -1061,11 +1079,19 @@ footer {
   max-width: 900px;
   margin: 0 auto;
 }
+.certifications-section .section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #2b3856;
+  margin-bottom: 2.5rem;
+  letter-spacing: 1px;
+}
 .certifications-row {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   margin-top: 2.5rem;
 }
 .cert-card {
@@ -1081,6 +1107,7 @@ footer {
   flex: 1 1 260px;
   transition: transform 0.18s, box-shadow 0.18s;
   border: 2px solid transparent;
+  justify-content: flex-start;
 }
 .cert-card:hover {
   transform: translateY(-6px) scale(1.03);
