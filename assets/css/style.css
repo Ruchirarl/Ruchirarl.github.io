@@ -1362,6 +1362,10 @@ footer {
   position: relative;
   z-index: 2;
   max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 .education-section .section-title {
   text-align: center;
@@ -1384,92 +1388,27 @@ footer {
   box-shadow: 0 2px 8px rgba(62,198,224,0.10);
 }
 .education-split-row {
-  display: flex;
-  gap: 2.5rem;
-  justify-content: center;
-  align-items: stretch;
-  margin-top: 0;
+  margin-top: 0.5rem;
   margin-bottom: 0;
-  position: relative;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.education-split-row::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 2.5rem; bottom: 2.5rem;
-  left: 50%;
-  width: 2px;
-  background: linear-gradient(to bottom, rgba(44,62,80,0.10) 10%, rgba(44,62,80,0.04) 90%);
-  transform: translateX(-50%);
-  z-index: 1;
 }
 .education-split-col {
-  flex: 1 1 340px;
-  max-width: 440px;
-  background: none;
-  border-radius: 0;
-  box-shadow: none;
-  border: none;
-  padding: 0 2rem;
-  margin: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  position: relative;
-  z-index: 2;
-  transition: none;
-}
-.education-split-col:hover {
-  box-shadow: none;
-  transform: none;
-  border-color: none;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .education-logo {
-  width: 64px;
-  height: 64px;
-  margin-bottom: 1.3rem;
-  margin-left: auto;
-  margin-right: auto;
-  background: none;
-  border-radius: 16px;
-  box-shadow: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.education-logo img {
-  width: 90%;
-  height: 90%;
-  object-fit: contain;
-  border-radius: 12px;
+  margin-bottom: 1.6rem;
 }
 .education-degree {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #23272f;
-  margin-bottom: 0.3rem;
-  font-family: 'Playfair Display', serif;
+  margin-bottom: 1.1rem;
 }
 .education-school {
-  font-size: 1.13rem;
-  font-weight: 600;
-  color: #1ca7ec;
-  margin-bottom: 0.3rem;
+  margin-bottom: 1.1rem;
 }
 .education-date {
-  font-size: 1.05rem;
-  color: #666;
-  margin-bottom: 0.3rem;
-  font-weight: 500;
+  margin-bottom: 1.1rem;
 }
 .education-extra {
-  font-size: 1.01rem;
-  color: #444e5e;
-  margin-bottom: 0.3rem;
+  margin-bottom: 1.1rem;
 }
 @media (max-width: 900px) {
   .education-split-row {
