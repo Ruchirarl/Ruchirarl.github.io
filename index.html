@@ -258,7 +258,7 @@
   <section class="certifications-section" id="certifications">
     <div class="container">
       <h2 class="section-title">Certifications</h2>
-      <div class="certifications-row">
+      <div class="certifications-row" style="justify-content:center; display:flex;">
         <div class="cert-card">
           <img src="assets/images/tableau-badge.png" alt="Tableau Certification">
           <div class="cert-content">
@@ -268,6 +268,19 @@
         </div>
         <!-- Add more cert-card blocks as you earn more certificates -->
       </div>
+    </div>
+  </section>
+
+  <!-- Medium Articles Section -->
+  <section class="medium-section" id="medium">
+    <div class="container">
+      <h2 class="section-title" style="text-align:center;">Medium Articles</h2>
+      <p class="section-subtitle" style="text-align:center;">Read my latest insights and stories on data, analytics, and business analysis.</p>
+      <div style="display:flex; justify-content:center; margin-bottom:2.5rem;">
+        <a href="https://medium.com/@ruchirarl" target="_blank" class="btn-outline" style="font-size:1.1rem;">View My Medium Profile</a>
+      </div>
+      <!-- Placeholder for future article cards -->
+      <!-- <div class="medium-articles-grid"></div> -->
     </div>
   </section>
 
@@ -392,8 +405,9 @@
       scrollNotif = document.createElement('div');
       scrollNotif.textContent = 'Close the popup to scroll the page.';
       scrollNotif.style.position = 'fixed';
-      scrollNotif.style.bottom = '32px';
+      scrollNotif.style.top = '32px';
       scrollNotif.style.right = '32px';
+      scrollNotif.style.bottom = '';
       scrollNotif.style.background = 'rgba(44,62,80,0.97)';
       scrollNotif.style.color = '#fff';
       scrollNotif.style.padding = '0.8rem 1.5rem';
