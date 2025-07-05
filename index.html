@@ -394,17 +394,17 @@
         modalDate.textContent = this.getAttribute('data-date');
         modalDetails.innerHTML = this.getAttribute('data-details');
         modal.style.display = 'flex';
-        document.body.style.overflow = 'hidden';
+        // document.body.style.overflow = 'hidden'; // Allow background scroll
       });
     });
     closeBtn.addEventListener('click', function() {
       modal.style.display = 'none';
-      document.body.style.overflow = '';
+      // document.body.style.overflow = '';
     });
     modal.addEventListener('click', function(e) {
       if (e.target === modal) {
         modal.style.display = 'none';
-        document.body.style.overflow = '';
+        // document.body.style.overflow = '';
       }
     });
   </script>
