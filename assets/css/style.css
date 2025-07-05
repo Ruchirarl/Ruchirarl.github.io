@@ -1099,3 +1099,71 @@ footer {
     max-width: 98vw;
   }
 }
+
+/* --- Education Section Split Columns --- */
+.education-split-row {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 2.2rem;
+  margin-bottom: 2.5rem;
+}
+.education-split-col {
+  flex: 1 1 320px;
+  max-width: 420px;
+  background: none;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.education-logo {
+  width: 54px;
+  height: 54px;
+  margin-bottom: 1.1rem;
+}
+.education-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+}
+.education-degree {
+  font-size: 1.13rem;
+  font-weight: 700;
+  color: #23272f;
+  margin-bottom: 0.2rem;
+  font-family: 'Playfair Display', serif;
+}
+.education-school {
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: #1ca7ec;
+  margin-bottom: 0.2rem;
+}
+.education-date {
+  font-size: 1.01rem;
+  color: #666;
+  margin-bottom: 0.2rem;
+  font-weight: 500;
+}
+.education-extra {
+  font-size: 0.98rem;
+  color: #444e5e;
+  margin-bottom: 0.2rem;
+}
+@media (max-width: 900px) {
+  .education-split-row {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .education-split-col {
+    max-width: 98vw;
+    width: 100%;
+    align-items: flex-start;
+  }
+}
