@@ -1448,13 +1448,13 @@ footer {
   }
 }
 
-/* === Professional Experience Card Improvements: Accent Bar Fix --- */
+/* === Professional Experience Card Accent Bar Premium Fix --- */
 .experience-card {
-  background: rgba(255, 255, 255, 0.18);
+  background: linear-gradient(135deg, rgba(255,255,255,0.22) 60%, rgba(240,248,255,0.13) 100%);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
   backdrop-filter: blur(12px);
   border-radius: 2rem;
-  border: 1.5px solid rgba(255,255,255,0.25);
+  border: 2px solid #3ec6e0;
   min-width: 300px;
   max-width: 340px;
   min-height: 340px;
@@ -1468,15 +1468,21 @@ footer {
   margin-bottom: 1.5rem;
   padding-bottom: 32px;
   padding-top: 18px;
-  overflow: hidden; /* Ensures accent bar stays inside rounded corners */
+  overflow: hidden;
+  margin-top: 10px; /* Adds space above the card so accent bar doesn't touch container top */
 }
 .experience-accent-bar {
   width: 100%;
-  height: 12px;
+  height: 8px;
   background: linear-gradient(90deg, #3ec6e0 0%, #6e8efb 100%);
   border-radius: 2rem 2rem 0 0;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
+  box-shadow: 0 2px 8px 0 rgba(62,198,224,0.10);
+  transition: filter 0.18s;
+}
+.experience-card:hover .experience-accent-bar {
+  filter: brightness(1.15);
 }
