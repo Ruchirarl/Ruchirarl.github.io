@@ -1554,30 +1554,63 @@ footer {
   }
 }
 
-/* --- Education Two Column Layout --- */
+/* --- Education Card Split Design --- */
 .education-two-col {
   display: flex;
-  gap: 3rem;
+  gap: 2.5rem;
   justify-content: center;
   align-items: flex-start;
   margin: 2.5rem 0 2rem 0;
   flex-wrap: wrap;
 }
-.education-col {
+.education-card {
+  flex: 1 1 340px;
+  max-width: 440px;
+  min-width: 280px;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.10);
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+.education-card-inner {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 1.2rem;
-  min-width: 320px;
-  max-width: 480px;
-  background: none;
-  box-shadow: none;
-  border-radius: 0;
-  padding: 0.5rem 0;
+  gap: 1.3rem;
+  padding: 2rem 2rem 1.5rem 2rem;
+}
+.education-card-dark {
+  background: #23272f;
+  color: #fff;
+}
+.education-card-dark .education-degree,
+.education-card-dark .education-school,
+.education-card-dark .education-date,
+.education-card-dark .education-extra {
+  color: #fff;
+}
+.education-card-dark .education-school {
+  color: #6ec1e4;
+}
+.education-card-light {
+  background: #fff;
+  color: #222;
+  border: 1.5px solid #e0e7ef;
+}
+.education-card-light .education-degree,
+.education-card-light .education-school,
+.education-card-light .education-date,
+.education-card-light .education-extra {
+  color: #222;
+}
+.education-card-light .education-school {
+  color: #1ca7ec;
 }
 .education-logo {
-  width: 54px;
-  height: 54px;
+  width: 70px;
+  height: 70px;
   border-radius: 12px;
   overflow: hidden;
   background: #fff;
@@ -1585,37 +1618,37 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 .education-logo img {
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
   object-fit: contain;
   display: block;
 }
 .education-details {
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
+  gap: 0.3rem;
+  justify-content: center;
 }
 .education-degree {
-  font-size: 1.13rem;
+  font-size: 1.15rem;
   font-weight: 700;
-  color: #222;
   margin-bottom: 0.1rem;
+  font-family: 'Playfair Display', serif;
 }
 .education-school {
   font-size: 1.05rem;
-  color: #1ca7ec;
   font-weight: 600;
+  margin-bottom: 0.1rem;
 }
 .education-date {
-  font-size: 0.98rem;
-  color: #666;
+  font-size: 1.01rem;
   margin-bottom: 0.2rem;
 }
 .education-extra {
-  font-size: 0.97rem;
-  color: #333;
+  font-size: 0.99rem;
   margin-bottom: 0.1rem;
 }
 @media (max-width: 900px) {
@@ -1624,8 +1657,12 @@ footer {
     gap: 2rem;
     align-items: stretch;
   }
-  .education-col {
+  .education-card {
     max-width: 98vw;
     min-width: 0;
+    margin-bottom: 1.2rem;
+  }
+  .education-card-inner {
+    padding: 1.3rem 1.1rem 1.1rem 1.1rem;
   }
 }
