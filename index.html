@@ -385,6 +385,39 @@
     const modalDetails = modal.querySelector('.modal-details');
     const closeBtn = modal.querySelector('.modal-close');
 
+    // Notification for scroll attempt
+    let scrollNotif;
+    function showScrollNotif() {
+      if (scrollNotif) return;
+      scrollNotif = document.createElement('div');
+      scrollNotif.textContent = 'Close the popup to scroll the page.';
+      scrollNotif.style.position = 'fixed';
+      scrollNotif.style.bottom = '32px';
+      scrollNotif.style.right = '32px';
+      scrollNotif.style.background = 'rgba(44,62,80,0.97)';
+      scrollNotif.style.color = '#fff';
+      scrollNotif.style.padding = '0.8rem 1.5rem';
+      scrollNotif.style.borderRadius = '12px';
+      scrollNotif.style.fontSize = '1rem';
+      scrollNotif.style.boxShadow = '0 4px 24px rgba(44,62,80,0.18)';
+      scrollNotif.style.zIndex = '10001';
+      scrollNotif.style.opacity = '0.98';
+      scrollNotif.style.transition = 'opacity 0.3s';
+      document.body.appendChild(scrollNotif);
+      setTimeout(() => {
+        if (scrollNotif) {
+          scrollNotif.style.opacity = '0';
+          setTimeout(() => {
+            if (scrollNotif) {
+              document.body.removeChild(scrollNotif);
+              scrollNotif = null;
+            }
+          }, 400);
+        }
+      }, 2200);
+    }
+
+    let modalOpen = false;
     document.querySelectorAll('.experience-modal-trigger').forEach(card => {
       card.addEventListener('click', function() {
         modalLogo.src = this.querySelector('img').src;
@@ -394,19 +427,35 @@
         modalDate.textContent = this.getAttribute('data-date');
         modalDetails.innerHTML = this.getAttribute('data-details');
         modal.style.display = 'flex';
-        // document.body.style.overflow = 'hidden'; // Allow background scroll
+        document.body.style.overflow = 'hidden';
+        modalOpen = true;
       });
     });
     closeBtn.addEventListener('click', function() {
       modal.style.display = 'none';
-      // document.body.style.overflow = '';
+      document.body.style.overflow = '';
+      modalOpen = false;
     });
     modal.addEventListener('click', function(e) {
       if (e.target === modal) {
         modal.style.display = 'none';
-        // document.body.style.overflow = '';
+        document.body.style.overflow = '';
+        modalOpen = false;
       }
     });
+    // Listen for scroll attempts when modal is open
+    window.addEventListener('wheel', function(e) {
+      if (modalOpen) {
+        e.preventDefault();
+        showScrollNotif();
+      }
+    }, { passive: false });
+    window.addEventListener('touchmove', function(e) {
+      if (modalOpen) {
+        e.preventDefault();
+        showScrollNotif();
+      }
+    }, { passive: false });
   </script>
 </body>
 </html>
