@@ -965,19 +965,17 @@ footer {
   }
 }
 
-/* === Enhanced Background Section Styles === */
+/* === Background Section: Premium Layout === */
 .background-section {
   background: linear-gradient(120deg, #f4f8fb 60%, #e6f0fa 100%);
-  padding: 5rem 0 4rem 0;
+  padding: 6rem 0 5rem 0;
   position: relative;
   z-index: 1;
 }
-
 .background-section .container {
   position: relative;
   z-index: 2;
 }
-
 .background-section::before {
   content: '';
   position: absolute;
@@ -988,475 +986,21 @@ footer {
   pointer-events: none;
 }
 
-.background-section .section-title {
-  font-size: 2.2rem;
-  font-weight: 800;
-  color: #2a3a4b;
-  margin-bottom: 2.5rem;
-  letter-spacing: 1px;
-  text-align: center;
-  position: relative;
-  z-index: 2;
-}
-
-.background-card-grid {
+.professional-card-grid {
   display: flex;
-  gap: 4rem;
+  gap: 2.5rem;
   justify-content: center;
-  align-items: flex-start;
-  margin: 0 auto;
-  max-width: 1200px;
-  width: 100%;
   flex-wrap: wrap;
-  position: relative;
-  z-index: 2;
-}
-
-.background-col {
-  flex: 1 1 0;
-  min-width: 320px;
-  max-width: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.background-heading {
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: #319795;
-  margin-bottom: 2.2rem;
-  text-align: center;
-  letter-spacing: 0.5px;
-  text-shadow: 0 2px 12px rgba(49,151,149,0.08);
-}
-
-.card-list {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 2.2rem;
-}
-
-.background-card {
-  background: rgba(255,255,255,0.92);
-  border-radius: 20px;
-  box-shadow: 0 6px 32px rgba(44, 62, 80, 0.10);
-  padding: 2rem 1.5rem 1.7rem 1.5rem;
-  display: flex;
-  align-items: flex-start;
-  gap: 1.3rem;
-  transition: box-shadow 0.2s, transform 0.2s;
-  width: 100%;
-  max-width: 440px;
-  margin: 0 auto;
-  border-left: 6px solid #4fd1c5;
-  position: relative;
-  opacity: 0;
-  animation: fadeInUp 0.8s forwards;
-}
-
-.background-card:nth-child(1) { animation-delay: 0.1s; }
-.background-card:nth-child(2) { animation-delay: 0.2s; }
-.background-card:nth-child(3) { animation-delay: 0.3s; }
-.background-card:nth-child(4) { animation-delay: 0.4s; }
-
-.background-card:hover {
-  box-shadow: 0 12px 40px rgba(44, 62, 80, 0.18);
-  transform: translateY(-6px) scale(1.025);
-  border-left: 6px solid #4299e1;
-}
-
-.card-logo {
-  width: 60px;
-  height: 60px;
-  background: #f4f8fb;
-  border-radius: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.06);
-}
-
-.card-logo img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-}
-
-.card-content {
-  flex: 1;
-}
-
-.card-content h4 {
-  font-size: 1.13rem;
-  font-weight: 700;
-  color: #2a3a4b;
-  margin-bottom: 0.3rem;
-  letter-spacing: 0.2px;
-}
-
-.card-place {
-  display: block;
-  font-size: 1.01rem;
-  color: #319795;
-  font-weight: 600;
-  margin-bottom: 0.1rem;
-}
-
-.card-date {
-  display: block;
-  font-size: 0.99rem;
-  color: #718096;
-  margin-bottom: 0.5rem;
-}
-
-.card-content p {
-  font-size: 0.99rem;
-  color: #444e5e;
-  margin: 0;
-}
-
-@keyframes fadeInUp {
-  0% { opacity: 0; transform: translateY(30px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-
-/* Responsive: stack columns on small screens */
-@media (max-width: 1100px) {
-  .background-card-grid {
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
-    max-width: 98vw;
-  }
-  .background-col {
-    max-width: 100%;
-    width: 100%;
-  }
-}
-
-/* === Background Section: New Layout Enhancements === */
-.background-subtitle {
-  font-size: 1.18rem;
-  font-weight: 700;
-  color: #319795;
-  margin: 2.5rem 0 1.5rem 0;
-  text-align: left;
-  letter-spacing: 0.5px;
-}
-
-.professional-card-row {
-  display: flex;
-  gap: 2.2rem;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: stretch;
   margin-bottom: 2.5rem;
 }
 
-.professional-card-row .background-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding-top: 2.2rem;
-  padding-bottom: 2.2rem;
-  min-height: 260px;
-}
-
-.card-logo-top {
-  margin: 0 auto 1.1rem auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.card-content-centered {
-  text-align: center;
-  width: 100%;
-}
-
-.card-role {
-  font-size: 1.13rem;
-  font-weight: 700;
-  color: #2a3a4b;
-  margin-bottom: 0.3rem;
-  margin-top: 0;
-}
-
-.card-company {
-  display: block;
-  font-size: 1.01rem;
-  color: #319795;
-  font-weight: 600;
-  margin-bottom: 0.1rem;
-}
-
-.professional-card-row .card-content span,
-.professional-card-row .card-content .card-date,
-.professional-card-row .card-content .card-place {
-  margin-bottom: 0;
-}
-
-.professional-card-row .card-content .card-date,
-.professional-card-row .card-content .card-place {
-  display: none;
-}
-
-@media (max-width: 1100px) {
-  .professional-card-row .background-card {
-    min-height: 180px;
-    padding-top: 1.2rem;
-    padding-bottom: 1.2rem;
-  }
-}
-
-.education-card-row {
-  display: flex;
-  gap: 2.2rem;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: stretch;
-  margin-bottom: 2.5rem;
-}
-
-.education-card-row .background-card {
-  flex: 1 1 320px;
-  min-width: 320px;
-  max-width: 420px;
-}
-
-.card-bullets {
-  margin: 0.7rem 0 0 1.1rem;
-  padding: 0 0 0 1.1rem;
-  color: #444e5e;
-  font-size: 0.99rem;
-  line-height: 1.6;
-  list-style: disc inside;
-}
-
-.card-bullets li {
-  margin-bottom: 0.4rem;
-  padding-left: 0.2rem;
-}
-
-@media (max-width: 1100px) {
-  .professional-card-row, .education-card-row {
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-  }
-  .professional-card-row .background-card,
-  .education-card-row .background-card {
-    max-width: 98vw;
-    min-width: 0;
-    width: 100%;
-  }
-}
-
-/* === Collapsible Experience Cards === */
-.collapsible-card {
-  cursor: pointer;
-  overflow: hidden;
-  transition: box-shadow 0.2s, transform 0.2s;
-  position: relative;
-}
-.collapsible-card .card-header {
-  display: flex;
-  align-items: center;
-  gap: 1.1rem;
-  width: 100%;
-  padding-right: 0.5rem;
-}
-.collapsible-card .card-header-content {
-  flex: 1;
-  min-width: 0;
-}
-.collapsible-card .expand-btn {
-  background: none;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  font-size: 1.2rem;
-  color: #319795;
-  transition: transform 0.2s;
-  margin-left: 0.5rem;
-  display: flex;
-  align-items: center;
-}
-.collapsible-card .expand-btn i {
-  transition: transform 0.3s;
-}
-.collapsible-card .card-details {
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-  transition: max-height 0.35s cubic-bezier(0.4,0,0.2,1), opacity 0.25s;
-  padding-top: 0;
-  margin-top: 0;
-}
-.collapsible-card.expanded .card-details {
-  max-height: 800px;
-  opacity: 1;
-  padding-top: 1.1rem;
-  margin-top: 0.2rem;
-}
-.collapsible-card.expanded .expand-btn i {
-  transform: rotate(180deg);
-}
-.collapsible-card .card-header h4,
-.collapsible-card .card-header .card-place,
-.collapsible-card .card-header .card-date {
-  margin-bottom: 0.1rem;
-}
-.collapsible-card .card-header h4 {
-  font-size: 1.08rem;
-  font-weight: 700;
-  color: #2a3a4b;
-  margin-bottom: 0.1rem;
-}
-.collapsible-card .card-header .card-place {
-  color: #319795;
-  font-weight: 600;
-  font-size: 0.99rem;
-}
-.collapsible-card .card-header .card-date {
-  color: #718096;
-  font-size: 0.97rem;
-}
-
-@media (max-width: 1100px) {
-  .collapsible-card .card-header {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-}
-
-/* === Experience Modal Popup === */
-.experience-modal-overlay {
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(44, 62, 80, 0.32);
-  z-index: 2000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: opacity 0.25s;
-  animation: fadeInModal 0.25s;
-}
-
-@keyframes fadeInModal {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-.experience-modal {
-  background: rgba(255,255,255,0.98);
-  border-radius: 22px;
-  box-shadow: 0 12px 48px rgba(44, 62, 80, 0.18);
-  max-width: 480px;
-  width: 95vw;
-  padding: 2.2rem 2rem 2rem 2rem;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  animation: popInModal 0.3s;
-}
-
-@keyframes popInModal {
-  from { transform: scale(0.92) translateY(40px); opacity: 0; }
-  to { transform: scale(1) translateY(0); opacity: 1; }
-}
-
-.modal-close {
-  position: absolute;
-  top: 1.1rem;
-  right: 1.3rem;
-  background: none;
-  border: none;
-  font-size: 2.1rem;
-  color: #319795;
-  cursor: pointer;
-  z-index: 10;
-  transition: color 0.2s;
-}
-.modal-close:hover {
-  color: #2a3a4b;
-}
-
-.modal-logo {
-  width: 64px;
-  height: 64px;
-  background: #f4f8fb;
-  border-radius: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1.1rem;
-  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.06);
-}
-.modal-logo img {
-  width: 44px;
-  height: 44px;
-  object-fit: contain;
-}
-
-.modal-content {
-  width: 100%;
-  text-align: left;
-}
-.modal-title {
-  font-size: 1.18rem;
-  font-weight: 700;
-  color: #2a3a4b;
-  margin-bottom: 0.2rem;
-}
-.modal-company {
-  display: block;
-  font-size: 1.01rem;
-  color: #319795;
-  font-weight: 600;
-  margin-bottom: 0.1rem;
-}
-.modal-date {
-  display: block;
-  font-size: 0.99rem;
-  color: #718096;
-  margin-bottom: 0.7rem;
-}
-.modal-details {
-  font-size: 0.99rem;
-  color: #444e5e;
-  margin-top: 0.2rem;
-}
-
-@media (max-width: 600px) {
-  .experience-modal {
-    padding: 1.2rem 0.7rem 1.2rem 0.7rem;
-    max-width: 98vw;
-  }
-  .modal-logo {
-    width: 48px;
-    height: 48px;
-  }
-  .modal-logo img {
-    width: 32px;
-    height: 32px;
-  }
-}
-
-/* === Professional Experience Card Accent Bar Premium Fix --- */
 .experience-card {
-  background: linear-gradient(135deg, rgba(255,255,255,0.22) 60%, rgba(240,248,255,0.13) 100%);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
-  backdrop-filter: blur(12px);
-  border-radius: 2rem;
-  border: 2px solid #3ec6e0;
+  background: rgba(255,255,255,0.97);
+  box-shadow: 0 8px 32px 0 rgba(44, 62, 80, 0.13);
+  border-radius: 22px;
+  border: 2px solid transparent;
   min-width: 300px;
-  max-width: 340px;
+  max-width: 350px;
   min-height: 340px;
   display: flex;
   flex-direction: column;
@@ -1467,15 +1011,19 @@ footer {
   cursor: pointer;
   margin-bottom: 1.5rem;
   padding-bottom: 32px;
-  padding-top: 18px;
+  padding-top: 0;
   overflow: hidden;
-  margin-top: 10px; /* Adds space above the card so accent bar doesn't touch container top */
+}
+.experience-card:hover {
+  transform: scale(1.04) translateY(-4px);
+  box-shadow: 0 20px 56px rgba(44, 62, 80, 0.18);
+  border-color: #3ec6e0;
 }
 .experience-accent-bar {
   width: 100%;
   height: 8px;
   background: linear-gradient(90deg, #3ec6e0 0%, #6e8efb 100%);
-  border-radius: 2rem 2rem 0 0;
+  border-radius: 22px 22px 0 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -1485,4 +1033,69 @@ footer {
 }
 .experience-card:hover .experience-accent-bar {
   filter: brightness(1.15);
+}
+.experience-logo-circle {
+  width: 90px;
+  height: 90px;
+  background: rgba(255,255,255,0.7);
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(62,198,224,0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+  margin-bottom: 18px;
+  overflow: hidden;
+  border: 3px solid #e0f7fa;
+  z-index: 2;
+}
+.experience-logo-circle img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  border-radius: 50%;
+  display: block;
+}
+.experience-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.experience-role {
+  font-size: 1.13rem;
+  font-weight: 700;
+  color: #23272f;
+  margin-bottom: 0.2rem;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+.experience-company {
+  font-size: 1.12rem;
+  font-weight: 600;
+  color: #1ca7ec;
+  text-align: center;
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.01em;
+}
+.experience-date {
+  font-size: 1.01rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 0.2rem;
+  font-weight: 500;
+}
+@media (max-width: 900px) {
+  .professional-card-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .experience-card {
+    min-width: 90vw;
+    max-width: 98vw;
+  }
 }
