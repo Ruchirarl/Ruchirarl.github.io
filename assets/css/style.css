@@ -94,7 +94,7 @@ ul {
 /* HERO SECTION - Enhanced Attractive Style */
 .hero {
   position: relative;
-  background: none;
+  background: #fff !important;
   z-index: 1;
   min-height: 100vh;
   display: flex;
@@ -263,7 +263,7 @@ ul {
 
 /* ABOUT SECTION - Modern Split Layout */
 .about-section {
-  background: #EEF2FB;
+  background: #EEF2FB !important;
   padding: 5rem 0;
   min-height: 80vh;
   display: flex;
@@ -389,7 +389,7 @@ ul {
 
 /* SKILLS SECTION - Core Competencies */
 .skills-section {
-  background: #fff;
+  background: #fff !important;
   padding: 4rem 0 2.5rem 0;
 }
 .section-title {
@@ -503,7 +503,7 @@ ul {
 
 /* TECHNOLOGIES & TOOLS SECTION */
 .tools-section {
-  background: #EEF2FB;
+  background: #EEF2FB !important;
   padding: 4rem 0 2.5rem 0;
 }
 .tools-section .section-subtitle {
@@ -622,7 +622,7 @@ ul {
 
 /* Projects Section - Enhanced Visuals */
 .projects-section {
-  background: #fff;
+  background: #fff !important;
   padding: 5rem 2rem;
   text-align: center;
 }
@@ -795,7 +795,7 @@ ul {
 
 /* CONTACT SECTION */
 .contact-section {
-  background: #EEF2FB;
+  background: #EEF2FB !important;
   padding: 5rem 2rem;
   text-align: center;
 }
@@ -977,7 +977,7 @@ footer {
 
 /* === Background Section: Premium Layout === */
 .background-section {
-  background: #EEF2FB;
+  background: #EEF2FB !important;
   padding: 6rem 0 5rem 0;
   position: relative;
   z-index: 1;
