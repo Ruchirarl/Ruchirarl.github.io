@@ -503,12 +503,12 @@ ul {
 
 /* TECHNOLOGIES & TOOLS SECTION */
 .tools-section {
-  background: linear-gradient(135deg, #f4f8fb 60%, #eaf6f3 100%);
+  background: #EEF2FB;
   padding: 4rem 0 2.5rem 0;
 }
 .tools-section .section-subtitle {
   text-align: center;
-  color: #468a7f;
+  color: #2563EB;
   font-size: 1.08rem;
   margin-bottom: 2.5rem;
   font-weight: 500;
@@ -525,7 +525,7 @@ ul {
 }
 .tool-bubble {
   position: relative;
-  background: rgba(255,255,255,0.85);
+  background: #fff;
   border-radius: 50%;
   width: 110px;
   height: 110px;
@@ -533,13 +533,13 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 24px rgba(70,138,127,0.09);
-  color: #468a7f;
+  box-shadow: 0 4px 24px rgba(37,99,235,0.09);
+  color: #2563EB;
   font-size: 2.1rem;
   font-weight: 700;
   margin: 0.5rem 0.2rem;
-  transition: transform 0.18s, box-shadow 0.18s, background 0.18s, color 0.18s;
-  border: 2px solid #eaf6f3;
+  transition: background 0.18s, color 0.18s, box-shadow 0.18s, border 0.18s;
+  border: 2px solid #2563EB;
   cursor: pointer;
   overflow: hidden;
   backdrop-filter: blur(4px);
@@ -571,17 +571,17 @@ ul {
 }
 .tool-bubble span {
   font-size: 1rem;
-  color: #2b3856;
+  color: #1F2937;
   font-weight: 600;
   margin-top: 0.5rem;
   letter-spacing: 0.5px;
   z-index: 1;
 }
 .tool-bubble:hover {
-  background: #468a7f;
+  background: #2563EB;
   color: #fff;
-  box-shadow: 0 8px 32px rgba(70,138,127,0.18), 0 0 16px #468a7f44;
-  border-color: #468a7f;
+  box-shadow: 0 8px 32px rgba(37,99,235,0.18), 0 0 16px #2563EB44;
+  border-color: #1E40AF;
   transform: scale(1.08) rotate(-2deg);
 }
 .tool-bubble:hover span {
