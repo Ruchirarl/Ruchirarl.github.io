@@ -503,7 +503,7 @@ ul {
 
 /* TECHNOLOGIES & TOOLS SECTION */
 .tools-section {
-  background: #EEF2FB;
+  background: linear-gradient(120deg, #F3F4F6 60%, #E0E7EF 100%);
   padding: 4rem 0 2.5rem 0;
 }
 .tools-section .section-subtitle {
@@ -577,8 +577,12 @@ ul {
   letter-spacing: 0.5px;
   z-index: 1;
 }
+/* --- Tools Section: Gradient Background and Gradient Hover --- */
+.tools-section {
+  background: linear-gradient(120deg, #F3F4F6 60%, #E0E7EF 100%);
+}
 .tool-bubble:hover {
-  background: #2563EB;
+  background: linear-gradient(90deg, #2563EB 0%, #1E40AF 100%);
   color: #fff;
   box-shadow: 0 8px 32px rgba(37,99,235,0.18), 0 0 16px #2563EB44;
   border-color: #1E40AF;
