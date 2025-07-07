@@ -389,7 +389,7 @@ ul {
 
 /* SKILLS SECTION - Core Competencies */
 .skills-section {
-  background: #fff;
+  background: #F3F4F6;
   padding: 4rem 0 2.5rem 0;
 }
 .section-title {
@@ -1496,4 +1496,33 @@ footer {
 /* --- Alternate Section Backgrounds --- */
 .alt-section {
   background: #F3F4F6;
+}
+
+/* --- Global Section Headings: Playfair Display --- */
+h1, h2, h3, h4, h5, h6, .section-title, .section-subtitle {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #1F2937;
+  letter-spacing: 0.5px;
+}
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 2.2rem;
+  color: #1F2937;
+}
+.section-subtitle {
+  font-size: 1.18rem;
+  color: #2563EB;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+/* --- Skills Section Headings --- */
+.skills-section .section-title {
+  font-size: 2.1rem;
+  margin-bottom: 1.2rem;
+}
+.skills-section .section-subtitle {
+  font-size: 1.08rem;
+  margin-bottom: 2.2rem;
 }
