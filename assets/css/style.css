@@ -2,8 +2,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
-  color: #333;
+  background-color: #F3F4F6;
+  color: #1F2937;
   font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -11,7 +11,8 @@ body {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: #2563EB;
+  transition: color 0.2s;
 }
 
 ul {
@@ -44,10 +45,10 @@ ul {
   top: 0;
   right: 0;
   width: 100%;
-  background: #ffffff;
+  background: #fff;
   padding: 1rem 2rem;
   z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 10px rgba(31,41,55,0.05);
   display: flex;
   justify-content: flex-end;
   box-sizing: border-box;
@@ -124,10 +125,10 @@ ul {
 .hero-divider {
   width: 90px;
   height: 3px;
-  background: linear-gradient(90deg, #468a7f 0%, #2b3856 100%);
+  background: linear-gradient(90deg, #2563EB 0%, #1E40AF 100%);
   margin: 1.5rem 0 2rem 0;
   border-radius: 2px;
-  box-shadow: 0 2px 8px rgba(70,138,127,0.10);
+  box-shadow: 0 2px 8px rgba(37,99,235,0.10);
 }
 
 .hero-socials {
@@ -177,9 +178,9 @@ ul {
 }
 
 .btn-outline {
-  background: transparent;
-  color: #468a7f;
-  border: 2px solid #468a7f;
+  background: #fff;
+  color: #2563EB;
+  border: 2px solid #2563EB;
   padding: 0.9rem 2.5rem;
   border-radius: 8px;
   font-weight: 700;
@@ -191,14 +192,13 @@ ul {
   cursor: pointer;
   display: inline-block;
   margin-bottom: 0.5rem;
-  box-shadow: 0 2px 8px rgba(70,138,127,0.08);
+  box-shadow: 0 2px 8px rgba(37,99,235,0.08);
 }
 
 .btn-outline:hover {
-  background: #468a7f;
+  background: #2563EB;
   color: #fff;
-  box-shadow: 0 4px 16px rgba(70,138,127,0.18);
-  border-color: #2b3856;
+  border-color: #1E40AF;
 }
 
 .scroll-down-arrow {
@@ -888,8 +888,8 @@ ul {
 footer {
   text-align: center;
   padding: 2rem;
-  background: #333;
-  color: white;
+  background: #1F2937;
+  color: #fff;
 }
 
 .footer-content {
@@ -908,13 +908,13 @@ footer {
 }
 
 .footer-links a {
-  color: white;
+  color: #fff;
   font-size: 1.2rem;
   transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-  color: #468a7f;
+  color: #2563EB;
 }
 
 /* RESPONSIVE DESIGN */
@@ -1248,7 +1248,7 @@ footer {
 .experience-modal-overlay {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(44, 62, 80, 0.32);
+  background: rgba(31,41,55,0.32);
   z-index: 9999;
   display: flex;
   align-items: center;
@@ -1355,79 +1355,122 @@ footer {
   }
 }
 
-/* --- Premium Education Section --- */
-.education-section {
-  background: linear-gradient(120deg, #f4f8fb 60%, #e6f0fa 100%);
-  position: relative;
-  z-index: 1;
-  padding: 5.5rem 0 5rem 0;
-}
-.education-section .container {
-  position: relative;
-  z-index: 2;
-  max-width: 1200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-.education-section .section-title {
-  text-align: center;
-  font-size: 2.3rem;
-  font-weight: 800;
-  color: #2a3a4b;
-  margin-bottom: 0.7rem;
-  letter-spacing: 1px;
-  position: relative;
-  z-index: 2;
-}
-.education-section .section-title::after {
-  content: '';
-  display: block;
-  width: 90px;
-  height: 5px;
-  margin: 1.1rem auto 2.2rem auto;
-  background: linear-gradient(90deg, #3ec6e0 0%, #6e8efb 100%);
+/* === ACCENT BARS & DIVIDERS === */
+.hero-divider, .section-title::after, .experience-accent-bar, .background-education::after, .education-section .section-title::after {
+  background: linear-gradient(90deg, #2563EB 0%, #1E40AF 100%);
   border-radius: 2px;
-  box-shadow: 0 2px 8px rgba(62,198,224,0.10);
+  box-shadow: 0 2px 8px rgba(37,99,235,0.10);
 }
-.education-split-row {
-  margin-top: 0.5rem;
-  margin-bottom: 0;
+
+.background-education::after {
+  height: 4px;
 }
-.education-split-col {
-  padding-top: 0;
-  padding-bottom: 0;
+
+/* === BUTTONS === */
+.btn-primary, .btn-outline, .btn-secondary, .btn-nav-resume {
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.08rem;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  padding: 0.9rem 2.5rem;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.08);
 }
-.education-logo {
-  margin-bottom: 1.6rem;
+.btn-primary {
+  background: #2563EB;
+  color: #fff;
+  border: 2px solid #2563EB;
 }
-.education-degree {
-  margin-bottom: 1.1rem;
+.btn-primary:hover, .btn-primary:active {
+  background: #1E40AF;
+  border-color: #1E40AF;
+  color: #fff;
 }
-.education-school {
-  margin-bottom: 1.1rem;
+.btn-outline {
+  background: #fff;
+  color: #2563EB;
+  border: 2px solid #2563EB;
 }
-.education-date {
-  margin-bottom: 1.1rem;
+.btn-outline:hover, .btn-outline:active {
+  background: #2563EB;
+  color: #fff;
+  border-color: #1E40AF;
 }
-.education-extra {
-  margin-bottom: 1.1rem;
+.btn-secondary {
+  background: #fff;
+  color: #2563EB;
+  border: 2px solid #2563EB;
 }
-@media (max-width: 900px) {
-  .education-split-row {
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-    max-width: 98vw;
-  }
-  .education-split-row::before {
-    display: none;
-  }
-  .education-split-col {
-    max-width: 98vw;
-    width: 100%;
-    margin: 0;
-    padding: 0 0.7rem;
-  }
+.btn-secondary:hover, .btn-secondary:active {
+  background: #2563EB;
+  color: #fff;
+  border-color: #1E40AF;
 }
+.btn-nav-resume {
+  background: #2563EB;
+  color: #fff;
+  border: 2px solid #2563EB;
+}
+.btn-nav-resume:hover, .btn-nav-resume:active {
+  background: #1E40AF;
+  border-color: #1E40AF;
+  color: #fff;
+}
+
+/* === CARDS, MODALS, SURFACES === */
+.project-card, .experience-card, .education-split-col, .cert-card, .experience-modal {
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 8px 32px 0 rgba(31,41,55,0.10);
+  border: 1.5px solid #F3F4F6;
+  color: #1F2937;
+}
+
+.experience-card:hover, .project-card:hover, .cert-card:hover, .education-split-col:hover {
+  box-shadow: 0 16px 48px 0 rgba(31,41,55,0.16);
+  border-color: #2563EB;
+  transform: translateY(-4px) scale(1.025);
+}
+
+/* === TEXT COLORS === */
+.experience-company, .education-school, .cert-date {
+  color: #2563EB;
+}
+.experience-date, .education-date {
+  color: #6B7280;
+}
+
+/* === MODAL === */
+.experience-modal-overlay {
+  background: rgba(31,41,55,0.32);
+}
+
+/* === NAVBAR === */
+.navbar {
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(31,41,55,0.05);
+}
+
+/* === BACKGROUND SECTIONS === */
+.background-section, .education-section, .certifications-section, .skills-section, .tools-section, .projects-section, .contact-section {
+  background: #F3F4F6;
+}
+
+/* === FOOTER === */
+footer {
+  background: #1F2937;
+  color: #fff;
+}
+.footer-links a {
+  color: #fff;
+}
+.footer-links a:hover {
+  color: #2563EB;
+}
+
+/* === REMOVE OLD GRADIENTS AND COLORS === */
+/* (No code here, just a note: all old gradients/colors are replaced above) */
