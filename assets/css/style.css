@@ -97,7 +97,7 @@ ul {
   justify-content: center;
   align-items: center;
   position: relative;
-  background: transparent;
+  background: #F3F4F6;
   z-index: 1;
   padding: 0 1rem;
 }
@@ -116,7 +116,7 @@ ul {
   font-size: 4.2rem;
   font-family: 'Playfair Display', serif;
   font-weight: 800;
-  color: #2b3856;
+  color: #1F2937;
   margin-bottom: 0.5rem;
   letter-spacing: 1.5px;
   text-shadow: 0 4px 24px rgba(70,138,127,0.10), 0 1px 0 #fff;
@@ -124,7 +124,7 @@ ul {
 
 .hero-divider {
   width: 90px;
-  height: 3px;
+  height: 4px;
   background: linear-gradient(90deg, #2563EB 0%, #1E40AF 100%);
   margin: 1.5rem 0 2rem 0;
   border-radius: 2px;
@@ -141,25 +141,25 @@ ul {
   width: 48px;
   height: 48px;
   font-size: 1.5rem;
-  background: #eaf6f3;
-  color: #468a7f;
+  background: #fff;
+  color: #2563EB;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 8px rgba(70,138,127,0.10);
+  box-shadow: 0 2px 8px rgba(37,99,235,0.10);
   transition: background 0.2s, color 0.2s, box-shadow 0.2s;
 }
 
 .hero-socials a:hover {
-  background: #468a7f;
+  background: #2563EB;
   color: #fff;
-  box-shadow: 0 4px 16px rgba(70,138,127,0.18);
+  box-shadow: 0 4px 16px rgba(37,99,235,0.18);
 }
 
 .hero-intro {
   font-size: 1.25rem;
-  color: #2b3856;
+  color: #1F2937;
   text-align: center;
   margin-bottom: 2.5rem;
   line-height: 1.8;
@@ -173,7 +173,7 @@ ul {
 }
 
 .hero-intro .highlight {
-  color: #468a7f;
+  color: #2563EB;
   font-weight: 700;
 }
 
@@ -1411,14 +1411,26 @@ footer {
   border-color: #1E40AF;
 }
 .btn-nav-resume {
+  background: #fff;
+  color: #2563EB;
+  border: 2px solid #2563EB;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  margin-left: 1.2rem;
+  height: 40px;
+  line-height: 1.2;
+  box-shadow: none;
+  transition: background 0.18s, color 0.18s, border 0.18s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-nav-resume:hover, .btn-nav-resume:focus {
   background: #2563EB;
   color: #fff;
-  border: 2px solid #2563EB;
-}
-.btn-nav-resume:hover, .btn-nav-resume:active {
-  background: #1E40AF;
   border-color: #1E40AF;
-  color: #fff;
 }
 
 /* === CARDS, MODALS, SURFACES === */
