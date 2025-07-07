@@ -78,7 +78,7 @@ ul {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #468a7f;
+  background-color: #2563EB;
   transition: width 0.3s ease-in-out;
 }
 
@@ -86,8 +86,9 @@ ul {
   width: 100%;
 }
 
-.nav-links li a:hover {
-  color: #468a7f;
+.nav-links li a:hover, .nav-links li a:focus {
+  color: #2563EB;
+  background: #E0E7EF;
 }
 
 /* HERO SECTION - Enhanced Attractive Style */
@@ -219,7 +220,12 @@ ul {
 }
 
 .scroll-down-arrow i {
-  font-size: 2.5rem;
+  color: #2563EB;
+  transition: color 0.2s;
+}
+
+.scroll-down-arrow:hover i {
+  color: #1E40AF;
 }
 
 @keyframes bounce-down {
