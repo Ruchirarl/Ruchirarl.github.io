@@ -389,7 +389,7 @@ ul {
 
 /* SKILLS SECTION - Core Competencies */
 .skills-section {
-  background: #F3F4F6;
+  background: #fff;
   padding: 4rem 0 2.5rem 0;
 }
 .section-title {
@@ -622,7 +622,7 @@ ul {
 
 /* Projects Section - Enhanced Visuals */
 .projects-section {
-  background: linear-gradient(135deg, #f4f8fb 60%, #eaf6f3 100%);
+  background: #fff;
   padding: 5rem 2rem;
   text-align: center;
 }
@@ -795,7 +795,7 @@ ul {
 
 /* CONTACT SECTION */
 .contact-section {
-  background-color: #ffffff;
+  background: #EEF2FB;
   padding: 5rem 2rem;
   text-align: center;
 }
@@ -977,7 +977,7 @@ footer {
 
 /* === Background Section: Premium Layout === */
 .background-section {
-  background: linear-gradient(120deg, #f4f8fb 60%, #e6f0fa 100%);
+  background: #EEF2FB;
   padding: 6rem 0 5rem 0;
   position: relative;
   z-index: 1;
