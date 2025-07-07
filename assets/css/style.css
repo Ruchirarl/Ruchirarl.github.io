@@ -263,7 +263,7 @@ ul {
 
 /* ABOUT SECTION - Modern Split Layout */
 .about-section {
-  background: #f4f8fb;
+  background: #EEF2FB;
   padding: 5rem 0;
   min-height: 80vh;
   display: flex;
@@ -309,28 +309,29 @@ ul {
 }
 
 .about-heading {
-  font-size: 2.5rem;
-  font-weight: 800;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #1F2937;
   margin-bottom: 0.5rem;
-  color: #2b3856;
   letter-spacing: 1px;
 }
 
 .about-subtitle {
-  font-size: 1.2rem;
-  color: #468a7f;
+  color: #2563EB;
+  font-size: 1.18rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
   letter-spacing: 0.5px;
 }
 .about-divider {
-  color: #b2c7d9;
+  color: #6B7280;
   margin: 0 0.5rem;
 }
 
 .about-content p {
+  color: #1F2937;
   font-size: 1.08rem;
-  color: #2b3856;
   margin-bottom: 1.1rem;
   line-height: 1.7;
   font-weight: 400;
@@ -344,37 +345,25 @@ ul {
 }
 
 .about-buttons .btn-primary {
-  background: #468a7f;
+  background: #2563EB;
   color: #fff;
-  border: 2px solid #468a7f;
-  font-weight: 700;
-  font-size: 1rem;
-  padding: 0.8rem 2.2rem;
-  border-radius: 8px;
-  transition: all 0.2s;
-  box-shadow: 0 2px 8px rgba(70,138,127,0.10);
+  border: 2px solid #2563EB;
 }
 .about-buttons .btn-primary:hover {
-  background: #2b3856;
-  border-color: #2b3856;
+  background: #1E40AF;
+  border-color: #1E40AF;
   color: #fff;
 }
 
 .about-buttons .btn-secondary {
-  background: #eaf0f6;
-  color: #2b3856;
-  border: 2px solid #eaf0f6;
-  font-weight: 600;
-  font-size: 1rem;
-  padding: 0.8rem 2.2rem;
-  border-radius: 8px;
-  transition: all 0.2s;
-  box-shadow: 0 2px 8px rgba(70,138,127,0.07);
+  background: #fff;
+  color: #2563EB;
+  border: 2px solid #2563EB;
 }
 .about-buttons .btn-secondary:hover {
-  background: #468a7f;
+  background: #2563EB;
   color: #fff;
-  border-color: #468a7f;
+  border-color: #1E40AF;
 }
 
 @media (max-width: 900px) {
@@ -1493,3 +1482,8 @@ footer {
 
 /* === REMOVE OLD GRADIENTS AND COLORS === */
 /* (No code here, just a note: all old gradients/colors are replaced above) */
+
+/* --- Alternate Section Backgrounds --- */
+.alt-section {
+  background: #F3F4F6;
+}
