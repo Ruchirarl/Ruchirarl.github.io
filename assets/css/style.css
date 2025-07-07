@@ -1362,8 +1362,12 @@ footer {
 }
 
 /* === ACCENT BARS & DIVIDERS === */
-.hero-divider, .section-title::after, .experience-accent-bar, .background-education::after, .education-section .section-title::after {
-  background: linear-gradient(90deg, #2563EB 0%, #1E40AF 100%);
+.hero-divider,
+.section-title::after,
+.experience-accent-bar,
+.background-education::after,
+.education-section .section-title::after {
+  background: linear-gradient(90deg, #2563EB 0%, #1E40AF 100%) !important;
   border-radius: 2px;
   box-shadow: 0 2px 8px rgba(37,99,235,0.10);
 }
