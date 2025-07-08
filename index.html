@@ -44,7 +44,6 @@
         <a href="#contact" class="btn-outline">CONTACT</a>
       </div>
     </div>
-    <a href="#about" class="section-arrow" id="hero-arrow" aria-label="Scroll Down"><i class="fas fa-chevron-down"></i></a>
   </section>
 
   <!-- About Section -->
@@ -70,7 +69,6 @@
         </div>
       </div>
     </div>
-    <a href="#skills" class="section-arrow" aria-label="Scroll Down"><i class="fas fa-chevron-down"></i></a>
   </section>
 
   <!-- Skills Section -->
@@ -89,7 +87,6 @@
         <div class="skill-card fade-in"><h3>Visio / Lucidchart</h3><p>Expert in diagramming tools for clear visual communication.</p></div>
       </div>
     </div>
-    <a href="#tools" class="section-arrow" aria-label="Scroll Down"><i class="fas fa-chevron-down"></i></a>
   </section>
 
   <!-- Technologies & Tools Section -->
@@ -111,7 +108,6 @@
         <div class="tool-bubble"><i class="fas fa-calculator"></i><span>NumPy</span></div>
       </div>
     </div>
-    <a href="#projects" class="section-arrow" aria-label="Scroll Down"><i class="fas fa-chevron-down"></i></a>
   </section>
 
   <!-- Projects Section -->
@@ -168,7 +164,6 @@
         <!-- Add more project cards as needed -->
       </div>
     </div>
-    <a href="#background" class="section-arrow" aria-label="Scroll Down"><i class="fas fa-chevron-down"></i></a>
   </section>
 
   <!-- Background Section -->
@@ -250,7 +245,6 @@
         </div>
       </div>
     </div>
-    <a href="#certifications" class="section-arrow" aria-label="Scroll Down"><i class="fas fa-chevron-down"></i></a>
   </section>
 
   <!-- Certifications Section -->
@@ -355,78 +349,6 @@
   <script>
     particlesJS.load('particles-js', 'assets/js/particles-config.json', function () {
       console.log('particles.js config loaded');
-    });
-    
-    // Enhanced debugging for section arrows
-    document.addEventListener('DOMContentLoaded', function() {
-      console.log('=== SECTION ARROW DEBUG ===');
-      
-      // Log all section-arrow hrefs on page load
-      document.querySelectorAll('.section-arrow').forEach((arrow, i) => {
-        console.log('Arrow', i, 'href:', arrow.getAttribute('href'), 'Element:', arrow);
-      });
-      
-      // Enhanced home arrow debugging
-      const homeArrow = document.querySelector('.hero .section-arrow');
-      if (homeArrow) {
-        console.log('Home arrow found:', homeArrow);
-        console.log('Home arrow href:', homeArrow.getAttribute('href'));
-        
-        homeArrow.addEventListener('click', function(e) {
-          e.preventDefault();
-          console.log('=== HOME ARROW CLICKED ===');
-          console.log('Original href:', this.getAttribute('href'));
-          console.log('Current href:', this.href);
-          
-          const targetHref = this.getAttribute('href');
-          const targetElement = document.querySelector(targetHref);
-          console.log('Target element:', targetElement);
-          
-          if (targetElement) {
-            console.log('Scrolling to element with ID:', targetElement.id);
-            targetElement.scrollIntoView({ behavior: 'smooth' });
-          } else {
-            console.warn('No target element found for:', targetHref);
-          }
-        });
-      } else {
-        console.warn('Home arrow not found!');
-      }
-      
-      // Specific fix for hero arrow - ensure it scrolls to about section
-      const heroArrow = document.getElementById('hero-arrow');
-      if (heroArrow) {
-        heroArrow.addEventListener('click', function(e) {
-          e.preventDefault();
-          e.stopPropagation();
-          console.log('=== HERO ARROW FIX APPLIED ===');
-          
-          const aboutSection = document.getElementById('about');
-          if (aboutSection) {
-            console.log('Scrolling to about section');
-            aboutSection.scrollIntoView({ behavior: 'smooth' });
-          } else {
-            console.error('About section not found!');
-          }
-        });
-      }
-      
-      // Debug all section arrows
-      document.querySelectorAll('.section-arrow').forEach((arrow, index) => {
-        arrow.addEventListener('click', function(e) {
-          console.log('=== ARROW', index, 'CLICKED ===');
-          console.log('Href attribute:', this.getAttribute('href'));
-          console.log('Href property:', this.href);
-          
-          const href = this.getAttribute('href');
-          const target = document.querySelector(href);
-          if (target) {
-            console.log('Target found:', target.id);
-          } else {
-            console.warn('No target found for:', href);
-          }
-        });
-      });
     });
     
     // Skill bubble interactions
