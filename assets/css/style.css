@@ -1151,6 +1151,25 @@ footer {
   margin: 2.2rem auto 0 auto;
 }
 
+/* --- Reduce space between separator and education --- */
+.background-professional::after {
+  margin: 1.2rem auto 0 auto;
+}
+.background-education {
+  margin-top: 0.8rem;
+}
+
+/* --- Increase font size for section subtitles --- */
+.background-subtitle {
+  font-size: 1.32rem;
+  font-weight: 800;
+}
+
+/* --- Certifications section: more vertical space --- */
+.certifications-section {
+  padding: 5.5rem 0 5rem 0;
+}
+
 /* --- Education Section: Flat, Clean, No Cards --- */
 .education-split-row {
   display: flex;
