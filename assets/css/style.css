@@ -40,6 +40,7 @@ ul {
 }
 .hero {
   background: none;
+  position: relative;
 }
 
 /* NAVBAR */
@@ -1153,10 +1154,31 @@ footer {
 
 /* --- Reduce space between separator and education --- */
 .background-professional::after {
-  margin: 1.2rem auto 0 auto;
+  margin: 0.2rem auto 0 auto;
 }
 .background-education {
-  margin-top: 0.8rem;
+  margin-top: 0;
+}
+
+/* --- Force background-section color --- */
+.background-section {
+  background: #EEF2FB !important;
+}
+
+/* --- Ensure particles are visible in hero --- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  background-color: transparent !important;
+  pointer-events: none;
+}
+.hero {
+  background: none;
+  position: relative;
 }
 
 /* --- Increase font size for section subtitles --- */
