@@ -273,7 +273,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 6rem 0 6rem 0;
+  padding: 0;
   position: relative;
 }
 .about-flex {
@@ -313,7 +313,7 @@ ul {
   justify-content: center;
   min-width: 300px;
   gap: 1.2rem;
-  padding: 2.5rem 0 2.5rem 0;
+  padding: 0;
 }
 .about-heading {
   font-family: 'Playfair Display', serif;
@@ -390,7 +390,7 @@ ul {
   }
   .about-content {
     align-items: center;
-    padding: 1.5rem 0 1.5rem 0;
+    padding: 0;
   }
   .about-heading {
     text-align: center;
@@ -1742,7 +1742,7 @@ h1, h2, h3, h4, h5, h6, .section-title, .section-subtitle {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 6rem 0 6rem 0;
+  padding: 0;
   position: relative;
 }
 .projects-section {
