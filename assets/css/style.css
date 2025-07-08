@@ -2120,12 +2120,86 @@ section:nth-of-type(even) {
   display: block;
   width: 60px;
   height: 4px;
-  background: #E5E7EB;
+  background: #2563EB;
   border-radius: 2px;
   margin: 0.75rem auto 0 auto;
 }
 
 /* --- REMOVE GRAY BETWEEN SECTIONS --- */
+.hero,
+.about-section,
+.skills-section,
+.tools-section,
+.projects-section,
+.background-section,
+.certifications-section,
+.contact-section {
+  background: unset;
+}
+
+/* --- ALTERNATE SECTION BACKGROUNDS --- */
+section {
+  background: #fff;
+}
+section:nth-of-type(even) {
+  background: #D6E4F0;
+}
+
+/* --- CENTER GRID CONTENT --- */
+.skills-grid,
+.tools-grid,
+.certifications-row {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.skills-section .container,
+.tools-section .container,
+.certifications-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --- BACKGROUND SECTION ALWAYS BLUE --- */
+.background-section {
+  background: #D6E4F0 !important;
+}
+
+/* --- PORTFOLIO SECTION TITLE UNDERLINE BLUE --- */
+.projects-section .section-title::after {
+  background: #2563EB;
+}
+
+/* --- SECTION TITLE UNDERLINE (DEFAULT) --- */
+.section-title {
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #E5E7EB;
+  border-radius: 2px;
+  margin: 0.75rem auto 0 auto;
+}
+
+/* --- SECTION SUBTITLE COLOR AND CENTER --- */
+.section-subtitle {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #2563EB;
+}
+
+/* --- REMOVE ALL GRAY BACKGROUNDS --- */
 .hero,
 .about-section,
 .skills-section,
