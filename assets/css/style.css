@@ -1686,3 +1686,35 @@ h1, h2, h3, h4, h5, h6, .section-title, .section-subtitle {
     padding: 0 0.5rem;
   }
 }
+
+/* --- Portfolio Section: Force Blue Palette --- */
+.projects-section {
+  background: #fff !important;
+}
+.project-card::before {
+  background: linear-gradient(90deg, #2563EB 0%, #1E40AF 100%) !important;
+}
+.project-card {
+  border: 2px solid #2563EB22 !important;
+  box-shadow: 0 8px 32px rgba(37,99,235,0.10) !important;
+}
+.project-card:hover {
+  border-color: #2563EB !important;
+  box-shadow: 0 20px 56px rgba(37,99,235,0.18) !important;
+}
+.project-content h3 {
+  color: #2563EB !important;
+}
+.tech-tag {
+  background-color: #2563EB !important;
+  color: #fff !important;
+}
+.project-learn-more {
+  background: linear-gradient(90deg, #2563EB 0%, #1E40AF 100%) !important;
+  color: #fff !important;
+  border: none !important;
+}
+.project-learn-more:hover {
+  background: linear-gradient(90deg, #1E40AF 0%, #2563EB 100%) !important;
+  color: #fff !important;
+}
