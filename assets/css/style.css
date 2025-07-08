@@ -1118,13 +1118,13 @@ footer {
 
 /* --- Strong Separation Between Professional and Education Sections --- */
 .background-professional {
-  margin-bottom: 1.2rem;
-  padding-bottom: 0;
-  border-bottom: 0;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  border-bottom: 0 !important;
 }
 .background-education {
-  margin-top: 0;
-  padding-top: 0.2rem;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
   position: relative;
 }
 .background-education::before {
