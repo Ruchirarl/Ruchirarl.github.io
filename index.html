@@ -357,6 +357,18 @@
       console.log('particles.js config loaded');
     });
     
+    // Debug: Log all section-arrow hrefs on page load
+    document.querySelectorAll('.section-arrow').forEach((arrow, i) => {
+      console.log('Arrow', i, 'href:', arrow.getAttribute('href'));
+    });
+    // Debug: Log home arrow href on click
+    const homeArrow = document.querySelector('.hero .section-arrow');
+    if (homeArrow) {
+      homeArrow.addEventListener('click', function(e) {
+        console.log('Home arrow clicked, href is:', this.getAttribute('href'));
+      });
+    }
+    
     // Debug: Log which section is being scrolled to
     document.querySelectorAll('.section-arrow').forEach(arrow => {
       arrow.addEventListener('click', function(e) {
