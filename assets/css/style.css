@@ -1956,3 +1956,135 @@ footer {
     font-size: 1.1rem;
   }
 }
+
+/* --- SECTION SPACING --- */
+section {
+  margin-bottom: 5rem;
+}
+
+.section-title {
+  margin-bottom: 2rem;
+}
+
+/* --- SKILLS --- */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* --- TOOLS --- */
+.tools-section {
+  background: #EEF2FB;
+  padding: 5rem 2rem;
+  margin-bottom: 5rem;
+  border-radius: 0 0 32px 32px;
+}
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --- PROJECTS --- */
+.projects-section {
+  background: #fff;
+  padding: 5rem 2rem;
+  margin-bottom: 5rem;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --- BACKGROUND --- */
+.background-section {
+  background: #EEF2FB;
+  padding: 5rem 2rem;
+  margin-bottom: 5rem;
+}
+.background-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.professional-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+.background-education {
+  margin-top: 3rem;
+}
+.education-split-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+/* --- CERTIFICATIONS --- */
+.certifications-section {
+  background: #fff;
+  padding: 5rem 2rem;
+  margin-bottom: 5rem;
+}
+
+/* --- CONTACT --- */
+.contact-section {
+  background: #EEF2FB;
+  padding: 5rem 2rem;
+  margin-bottom: 0;
+}
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 1200px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tools-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .professional-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .education-split-row {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 900px) {
+  .skills-grid,
+  .tools-grid,
+  .projects-grid,
+  .professional-card-grid {
+    grid-template-columns: 1fr;
+  }
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* --- GENERAL CLEANUP --- */
+section:last-of-type {
+  margin-bottom: 0;
+}
