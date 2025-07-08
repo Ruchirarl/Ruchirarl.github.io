@@ -38,6 +38,9 @@ ul {
   background-color: transparent !important;
   pointer-events: none;
 }
+.hero {
+  background: none;
+}
 
 /* NAVBAR */
 .navbar {
