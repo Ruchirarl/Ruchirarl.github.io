@@ -1736,7 +1736,7 @@ h1, h2, h3, h4, h5, h6, .section-title, .section-subtitle {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
+  padding: 5rem 0;
 }
 .projects-section {
   min-height: 100vh;
@@ -1745,60 +1745,46 @@ h1, h2, h3, h4, h5, h6, .section-title, .section-subtitle {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0;
+  padding: 5rem 2rem;
 }
-.skills-section {
-  min-height: 50vh;
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
+.skills-section, .tools-section, .background-section, .certifications-section, .contact-section, footer {
+  min-height: unset;
+  height: unset;
+  display: unset;
+  flex-direction: unset;
+  justify-content: unset;
+  align-items: unset;
+  padding: unset;
+  margin: unset;
 }
-.tools-section {
-  min-height: 50vh;
-  height: 50vh;
+
+/* Section Down Arrow (like home) */
+.section-arrow {
+  position: absolute;
+  left: 50%;
+  bottom: 32px;
+  transform: translateX(-50%);
+  font-size: 2.5rem;
+  color: #2563EB;
+  background: none;
+  border: none;
+  z-index: 10;
+  animation: bounce-down 2s infinite;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 0;
+  justify-content: center;
+  cursor: pointer;
 }
-.background-section {
-  min-height: 100vh;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
+.section-arrow i {
+  color: #2563EB;
+  transition: color 0.2s;
 }
-.certifications-section {
-  min-height: 33vh;
-  height: 33vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
+.section-arrow:hover i {
+  color: #1E40AF;
 }
-.contact-section {
-  min-height: 33vh;
-  height: 33vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-}
-footer {
-  min-height: 33vh;
-  height: 33vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
+@media (max-width: 600px) {
+  .section-arrow {
+    font-size: 1.5rem;
+    bottom: 18px;
+  }
 }
