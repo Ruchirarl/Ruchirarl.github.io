@@ -357,6 +357,19 @@
       console.log('particles.js config loaded');
     });
     
+    // Debug: Log which section is being scrolled to
+    document.querySelectorAll('.section-arrow').forEach(arrow => {
+      arrow.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        const target = document.querySelector(href);
+        if (target) {
+          console.log('Scrolling to:', href, 'Element:', target);
+        } else {
+          console.warn('No element found for', href);
+        }
+      });
+    });
+    
     // Skill bubble interactions
     document.querySelectorAll('.skill-bubble').forEach(bubble => {
       bubble.addEventListener('mouseenter', function() {
