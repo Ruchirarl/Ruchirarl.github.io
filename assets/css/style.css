@@ -28,6 +28,51 @@ ul {
 }
 
 /* Section spacing improvements */
+.skills-section {
+  padding: 5rem 2rem;
+  background: #fff;
+  margin-bottom: 0;
+}
+
+.tools-section {
+  padding: 5rem 2rem;
+  background: #EEF2FB;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.projects-section {
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 2rem;
+  background: #fff;
+}
+
+.background-section {
+  padding: 5rem 2rem;
+  background: #EEF2FB;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.certifications-section {
+  padding: 5rem 2rem;
+  background: #fff;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.contact-section {
+  padding: 5rem 2rem;
+  background: #EEF2FB;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .skills-section .container,
 .tools-section .container,
 .background-section .container,
@@ -1867,6 +1912,20 @@ footer {
 }
 
 /* Responsive improvements */
+@media (max-width: 1200px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .professional-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 900px) {
   .contact-content {
     grid-template-columns: 1fr;
