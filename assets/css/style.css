@@ -1959,11 +1959,10 @@ footer {
 
 /* --- SECTION SPACING --- */
 section {
-  margin-bottom: 5rem;
+  margin-bottom: 0;
 }
-
-.section-title {
-  margin-bottom: 2rem;
+section + section {
+  margin-top: 5rem;
 }
 
 /* --- SKILLS --- */
