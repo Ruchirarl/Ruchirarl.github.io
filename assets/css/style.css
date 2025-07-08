@@ -1549,3 +1549,110 @@ h1, h2, h3, h4, h5, h6, .section-title, .section-subtitle {
   border-radius: 2px;
   box-shadow: 0 2px 8px rgba(37,99,235,0.10);
 }
+
+/* --- Background Section: Centered and Spaced --- */
+.background-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.background-section .section-title {
+  text-align: center;
+  margin-bottom: 2.8rem;
+}
+.background-professional, .background-education {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.background-professional {
+  margin-bottom: 3.5rem;
+}
+.background-subtitle {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: #1F2937;
+  margin-bottom: 1.7rem;
+}
+.professional-card-grid {
+  justify-content: center;
+  margin-bottom: 0;
+}
+.background-education {
+  margin-top: 2.5rem;
+}
+.education-split-row {
+  margin-top: 0.7rem;
+  margin-bottom: 0;
+  justify-content: center;
+}
+.education-split-col {
+  padding: 2.2rem 2rem 2.2rem 2rem;
+  margin: 0 0.7rem;
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 8px 32px 0 rgba(31,41,55,0.10);
+  border: 1.5px solid #F3F4F6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 320px;
+  max-width: 440px;
+}
+.education-logo {
+  margin-bottom: 1.3rem;
+}
+.education-degree {
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: #1F2937;
+  margin-bottom: 0.7rem;
+  font-family: 'Playfair Display', serif;
+}
+.education-school {
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: #2563EB;
+  margin-bottom: 0.7rem;
+}
+.education-date {
+  font-size: 1.01rem;
+  color: #6B7280;
+  margin-bottom: 0.7rem;
+  font-weight: 500;
+}
+.education-extra {
+  font-size: 1.01rem;
+  color: #444e5e;
+  margin-bottom: 0.7rem;
+}
+.education-split-row::before {
+  top: 1.5rem;
+  bottom: 1.5rem;
+}
+.background-education .education-split-row {
+  margin-bottom: 2.2rem;
+}
+.background-education::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #2563EB 0%, #1E40AF 100%);
+  border-radius: 2px;
+  margin: 2.5rem auto 0 auto;
+}
+@media (max-width: 900px) {
+  .education-split-col {
+    min-width: 0;
+    max-width: 98vw;
+    padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+  }
+  .background-section .container {
+    padding: 0 0.5rem;
+  }
+}
