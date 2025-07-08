@@ -268,32 +268,34 @@ ul {
 
 /* ABOUT SECTION - Modern Split Layout */
 .about-section {
-  background: #EEF2FB !important;
-  padding: 5rem 0;
-  min-height: 80vh;
+  background: #F5F8FE !important;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 6rem 0 6rem 0;
+  position: relative;
 }
-
 .about-flex {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3.5rem;
+  gap: 4.5rem;
   max-width: 1100px;
   margin: 0 auto;
   width: 100%;
   flex-wrap: wrap;
 }
-
 .about-photo {
   flex: 0 0 260px;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 8px 32px rgba(37,99,235,0.10), 0 1.5px 0 #fff;
+  border-radius: 50%;
+  background: #eaf2fb;
+  padding: 12px;
 }
-
 .about-photo img {
   width: 240px;
   height: 240px;
@@ -303,7 +305,6 @@ ul {
   box-shadow: 0 6px 32px rgba(70,138,127,0.10);
   background: #dbe6ef;
 }
-
 .about-content {
   flex: 1 1 350px;
   color: #2b3856;
@@ -311,43 +312,43 @@ ul {
   flex-direction: column;
   justify-content: center;
   min-width: 300px;
+  gap: 1.2rem;
+  padding: 2.5rem 0 2.5rem 0;
 }
-
 .about-heading {
   font-family: 'Playfair Display', serif;
-  font-size: 2.3rem;
-  font-weight: 700;
+  font-size: 3.2rem;
+  font-weight: 800;
   color: #1F2937;
-  margin-bottom: 0.5rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  margin-bottom: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: none;
+  text-align: left;
+  line-height: 1.1;
 }
-
 .about-subtitle {
   color: #2563EB;
-  font-size: 1.18rem;
+  font-size: 1.25rem;
   font-weight: 600;
-  margin-bottom: 1.5rem;
-  letter-spacing: 0.5px;
+  margin-bottom: 1.7rem;
+  letter-spacing: 0.7px;
 }
 .about-divider {
   color: #6B7280;
   margin: 0 0.5rem;
 }
-
 .about-content p {
   color: #1F2937;
-  font-size: 1.08rem;
+  font-size: 1.13rem;
   margin-bottom: 1.1rem;
   line-height: 1.7;
   font-weight: 400;
 }
-
 .about-buttons {
   display: flex;
-  gap: 0.7rem;
-  margin-top: 1.5rem;
-  flex-wrap: nowrap;
+  gap: 1.1rem;
+  margin-top: 2.2rem;
+  flex-wrap: wrap;
   justify-content: flex-start;
 }
 
@@ -384,11 +385,16 @@ ul {
 @media (max-width: 900px) {
   .about-flex {
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 3.5rem;
     text-align: center;
   }
   .about-content {
     align-items: center;
+    padding: 1.5rem 0 1.5rem 0;
+  }
+  .about-heading {
+    text-align: center;
+    font-size: 2.1rem;
   }
 }
 
@@ -1736,7 +1742,8 @@ h1, h2, h3, h4, h5, h6, .section-title, .section-subtitle {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5rem 0;
+  padding: 6rem 0 6rem 0;
+  position: relative;
 }
 .projects-section {
   min-height: 100vh;
