@@ -981,13 +981,14 @@ footer {
 /* === Background Section: Premium Layout === */
 .background-section {
   background: #EEF2FB !important;
-  padding: 6rem 0 5rem 0;
+  padding: 4rem 0 3.5rem 0;
   position: relative;
   z-index: 1;
 }
 .background-section .container {
   position: relative;
   z-index: 2;
+  padding: 0 1rem;
 }
 .background-section::before {
   content: '';
@@ -1115,7 +1116,7 @@ footer {
 
 /* --- Strong Separation Between Professional and Education Sections --- */
 .background-professional {
-  margin-bottom: 5.5rem;
+  margin-bottom: 2.2rem;
   padding-bottom: 0;
   border-bottom: 0;
 }
@@ -1132,22 +1133,22 @@ footer {
   background: transparent;
 }
 .background-education::after {
+  display: none !important;
+}
+
+/* --- Add separator between professional and education --- */
+.background-professional {
+  margin-bottom: 2.2rem;
+  position: relative;
+}
+.background-professional::after {
   content: '';
   display: block;
   width: 100%;
-  height: 4px;
-  background: linear-gradient(90deg, #3ec6e0 0%, #6e8efb 100%);
+  height: 3px;
+  background: linear-gradient(90deg, #2563EB 0%, #1E40AF 100%);
   border-radius: 2px;
-  margin: 0 auto 3.5rem auto;
-}
-@media (max-width: 900px) {
-  .background-education::before {
-    height: 2rem;
-  }
-  .background-education::after {
-    height: 3px;
-    margin-bottom: 2rem;
-  }
+  margin: 2.2rem auto 0 auto;
 }
 
 /* --- Education Section: Flat, Clean, No Cards --- */
@@ -1380,7 +1381,7 @@ footer {
 }
 
 .background-education::after {
-  height: 4px;
+  display: none !important;
 }
 
 /* === BUTTONS === */
@@ -1638,13 +1639,7 @@ h1, h2, h3, h4, h5, h6, .section-title, .section-subtitle {
   margin-bottom: 2.2rem;
 }
 .background-education::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 3px;
-  background: linear-gradient(90deg, #2563EB 0%, #1E40AF 100%);
-  border-radius: 2px;
-  margin: 2.5rem auto 0 auto;
+  display: none !important;
 }
 @media (max-width: 900px) {
   .education-split-col {
