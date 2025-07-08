@@ -2087,3 +2087,36 @@ section + section {
 section:last-of-type {
   margin-bottom: 0;
 }
+
+/* --- SECTION BACKGROUNDS --- */
+.hero,
+.about-section,
+.skills-section,
+.tools-section,
+.projects-section,
+.background-section,
+.certifications-section,
+.contact-section {
+  background: #fff;
+}
+
+/* --- SECTION TITLE UNDERLINE --- */
+.section-title {
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+}
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #E5E7EB;
+  border-radius: 2px;
+  margin: 0.75rem auto 0 auto;
+}
+
+/* --- SECTION SUBTITLE COLOR --- */
+.section-subtitle {
+  color: #2563EB;
+}
