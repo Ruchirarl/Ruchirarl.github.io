@@ -2088,16 +2088,25 @@ section:last-of-type {
   margin-bottom: 0;
 }
 
-/* --- SECTION BACKGROUNDS --- */
-.hero,
-.about-section,
-.skills-section,
-.tools-section,
-.projects-section,
-.background-section,
-.certifications-section,
-.contact-section {
+/* --- SECTION BACKGROUNDS: ALTERNATE --- */
+section {
   background: #fff;
+}
+section:nth-of-type(even) {
+  background: #D6E4F0;
+}
+
+/* --- CENTER TITLES AND SUBTITLES --- */
+.section-title {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-subtitle {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #2563EB;
 }
 
 /* --- SECTION TITLE UNDERLINE --- */
@@ -2116,7 +2125,14 @@ section:last-of-type {
   margin: 0.75rem auto 0 auto;
 }
 
-/* --- SECTION SUBTITLE COLOR --- */
-.section-subtitle {
-  color: #2563EB;
+/* --- REMOVE GRAY BETWEEN SECTIONS --- */
+.hero,
+.about-section,
+.skills-section,
+.tools-section,
+.projects-section,
+.background-section,
+.certifications-section,
+.contact-section {
+  background: unset;
 }
