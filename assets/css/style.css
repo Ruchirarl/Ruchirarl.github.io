@@ -897,6 +897,7 @@ ul {
   text-align: left;
 }
 
+/*
 .contact-item {
   display: flex;
   align-items: center;
@@ -924,6 +925,7 @@ ul {
 .contact-item:hover .contact-icon {
   color: white;
 }
+*/
 
 .contact-details h3 {
   font-size: 1.1rem;
