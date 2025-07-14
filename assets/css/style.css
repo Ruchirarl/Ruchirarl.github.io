@@ -2365,3 +2365,25 @@ section, .container, .skills-section, .tools-section, .projects-section, .backgr
 .contact-link:focus .contact-details p {
   color: #fff;
 }
+.tool-bubble {
+  width: 180px !important;
+  height: 180px !important;
+  font-size: 2.4rem !important;
+  padding: 1.5rem 0.5rem !important;
+}
+.tool-bubble span {
+  font-size: 1.2rem !important;
+  margin-top: 0.9rem !important;
+}
+@media (max-width: 900px) {
+  .tool-bubble {
+    width: 130px !important;
+    height: 130px !important;
+    font-size: 1.7rem !important;
+    padding: 0.9rem 0.2rem !important;
+  }
+  .tool-bubble span {
+    font-size: 1rem !important;
+    margin-top: 0.5rem !important;
+  }
+}
