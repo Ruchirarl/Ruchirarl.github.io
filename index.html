@@ -310,7 +310,7 @@
         </div>
         
         <div class="contact-form">
-          <form id="contactForm">
+          <form id="contactForm" action="mailto:ruchirarl@yahoo.com" method="POST" enctype="text/plain">
             <div class="form-group">
               <input type="text" id="name" name="name" placeholder="Your Name" required>
             </div>
@@ -368,12 +368,7 @@
       });
     });
     
-    // Contact form handling
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      // Add your form submission logic here
-      alert('Thank you for your message! I\'ll get back to you soon.');
-    });
+    // Remove contact form JS handler
 
     // Experience Modal Popup
     const modal = document.getElementById('experience-modal');

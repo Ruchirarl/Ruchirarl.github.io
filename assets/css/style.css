@@ -2349,15 +2349,13 @@ section, .container, .skills-section, .tools-section, .projects-section, .backgr
   font-weight: 500;
 }
 .contact-link:hover, .contact-link:focus {
-  background: linear-gradient(90deg, #2563EB 0%, #1E40AF 100%);
-  color: #fff;
-  box-shadow: 0 4px 16px rgba(37,99,235,0.18);
-  transform: translateX(5px) scale(1.03);
-  border-color: #2563EB;
+  background: linear-gradient(90deg, #2563EB 0%, #1E40AF 100%) !important;
+  color: #fff !important;
+  border-color: #2563EB !important;
 }
 .contact-link:hover .contact-icon,
 .contact-link:focus .contact-icon {
-  color: #fff;
+  color: #fff !important;
 }
 .contact-link:hover .contact-details h3,
 .contact-link:focus .contact-details h3,
