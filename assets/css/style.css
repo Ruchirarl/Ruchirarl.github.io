@@ -2231,10 +2231,10 @@ section, .container, .skills-section, .tools-section, .projects-section, .backgr
   align-items: stretch;
 }
 .skill-card {
-  min-width: 200px;
-  max-width: 200px;
-  min-height: 220px;
-  max-height: 220px;
+  min-width: 160px;
+  max-width: 160px;
+  min-height: 170px;
+  max-height: 170px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2246,6 +2246,14 @@ section, .container, .skills-section, .tools-section, .projects-section, .backgr
 }
 .skill-card p {
   font-size: 1rem;
+}
+
+/* Reduce gap between title and subtitle in skills section */
+.skills-section .section-title {
+  margin-bottom: 0.7rem;
+}
+.skills-section .section-subtitle {
+  margin-bottom: 1.2rem;
 }
 
 /* CONTACT SECTION */
