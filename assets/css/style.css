@@ -31,6 +31,7 @@ ul {
 .skills-section {
   padding: 5rem 2rem;
   background: #fff;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -699,7 +700,7 @@ ul {
   margin: 0 auto;
 }
 .projects-section .section-subtitle {
-  color: #468a7f;
+  color: #2563EB !important;
   font-size: 1.15rem;
   font-weight: 400;
   margin-bottom: 2.5rem;
@@ -876,13 +877,20 @@ ul {
 }
 
 .contact-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  margin-top: 3rem;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 2.5rem;
+}
+.contact-info, .contact-form {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 350px;
+}
+.contact-form {
+  justify-content: center;
 }
 
 .contact-info {
@@ -1929,8 +1937,45 @@ footer {
 
 @media (max-width: 900px) {
   .contact-content {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     gap: 2rem;
+  }
+  .contact-info, .contact-form {
+    min-height: unset;
+  }
+  .contact-info {
+    align-items: center;
+    text-align: center;
+  }
+  .contact-form {
+    align-items: center;
+    text-align: center;
+  }
+  .contact-item {
+    width: 100%;
+    justify-content: center;
+  }
+  .contact-icon {
+    margin-right: 0;
+  }
+  .contact-details h3 {
+    text-align: center;
+  }
+  .contact-details p {
+    text-align: center;
+  }
+  .contact-link {
+    width: 100%;
+    justify-content: center;
+  }
+  .contact-link .contact-icon {
+    margin-right: 0;
+  }
+  .contact-link .contact-details h3 {
+    text-align: center;
+  }
+  .contact-link .contact-details p {
+    text-align: center;
   }
   
   .professional-card-grid {
